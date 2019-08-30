@@ -11,3 +11,40 @@ body{
     margin: 0;
     padding: 0;
 }
+<<<<<<< HEAD
+=======
+/* Homepage styling starts here */
+.homepage{
+    width: 100%;
+    min-height: 100vh;
+    background: black;
+    color: white;
+}
+.homepage .header{
+    width: 100%;
+    padding: 2px;
+    background: green;
+    display: flex;
+}
+.homepage .header img{
+    width: 100px;
+    /* background: yellow */
+}
+.homepage .nav-links{
+    background: green;
+    margin-left: auto;
+}
+.homepage .nav-links ul {
+    display: flex;
+    list-style-type: none;
+}
+.homepage .nav-links ul li {
+    text-decoration: none;
+}
+.homepage .nav-links ul li a{
+    text-decoration: none;
+}
+
+
+/* Homepage styling ends here */
+>>>>>>> 137302a8f62f000573712d18f7cc68da9d7a7822
