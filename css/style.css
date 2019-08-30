@@ -11,18 +11,11 @@ body{
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
-=======
 /* Homepage styling starts here */
-.homepage{
-    width: 100%;
-    min-height: 100vh;
-    background: black;
-    color: white;
-}
+
 .homepage .header{
     width: 100%;
-    padding: 2px;
+    position: relative;
     background: green;
     display: flex;
 }
@@ -31,8 +24,9 @@ body{
     /* background: yellow */
 }
 .homepage .nav-links{
-    background: green;
+    background: white;
     margin-left: auto;
+    margin-right: 30px;
 }
 .homepage .nav-links ul {
     display: flex;
@@ -47,4 +41,3 @@ body{
 
 
 /* Homepage styling ends here */
->>>>>>> 137302a8f62f000573712d18f7cc68da9d7a7822
