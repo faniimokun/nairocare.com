@@ -1,2 +1,2 @@
 # nairocare.com
-WebApp for donations to IDPs
+WebApp for donations to NairoCare Foundation
