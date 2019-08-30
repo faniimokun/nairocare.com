@@ -14,15 +14,15 @@ body {
 }
 
 /*======== Nairocare Home page here ========*/
-html {
-  box-sizing: border-box;
+/* html { */
+  /* box-sizing: border-box;
   width: 100%;
   background: url("../images/bg-image.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-}
+  background-size: cover; */
+/* } */
 
 .container {
   box-sizing: border-box;
@@ -32,6 +32,12 @@ html {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   padding: 0 20px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url("../images/bg-image.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .container header nav {
@@ -93,3 +99,54 @@ html {
 /* Homepage styling ends here */
 
 /* ============== Add next Section styles here =================*/
+
+/* ABOUT US PAGE DESIGN HERE */
+.about-us{
+    width: 100%;
+    min-height: 100vh;
+    background: crimson; 
+       /* background image will still be added */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+.about-us h1.d-black{
+    font-weight: 900;
+    font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
+    color: #FFA401;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 1em;
+     
+}
+
+.about-us section.section-info{
+    width: 400px;
+    height: auto;
+    text-rendering: optimizeSpeed;
+    background: rgba(255, 255, 255, .7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 1em;
+}
+@media (max-width: 900px){
+    .about-us section.section-info{
+        width: auto;
+    }
+}
+.about-us section.section-info h1{
+    font-size: 2em;
+    color: #014127;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.about-us section.section-info p{
+    color: #222222;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* ABOUT US PAGE DESIGN ENDS HERE */
