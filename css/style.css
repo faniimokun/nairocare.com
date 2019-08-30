@@ -104,7 +104,8 @@ body {
 .about-us{
     width: 100%;
     min-height: 100vh;
-    background: crimson;    
+    background: crimson; 
+       /* background image will still be added */
     display: flex;
     flex-direction: column;
     padding: 20px;
