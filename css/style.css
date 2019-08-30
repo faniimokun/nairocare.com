@@ -1,120 +1,95 @@
 /* Prefixes added to support all browsers */
-*{
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-
-}
-body{
-    margin: 0;
-    padding: 0;
-}
-/* Homepage styling starts here */
-/* .homepage{
-    width: 100%;
-    min-height: 100vh;
-    background: black;
-    color: white;
-}
-.homepage .header{
-    width: 100%;
-    padding: 2px;
-    background: green;
-    display: flex;
-}
-.homepage .header img{
-    width: 100px;
-
-}
-.homepage .nav-links{
-    background: green;
-    margin-left: auto;
-}
-.homepage .nav-links ul {
-    display: flex;
-    list-style-type: none;
-}
-.homepage .nav-links ul li {
-    text-decoration: none;
-}
-.homepage .nav-links ul li a{
-    text-decoration: none;
-} */
-
-/*======== Nairocare Styles here ========*/
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html { 
-	box-sizing: border-box;
-	width: 100%;
-	background: url('../images/bg-image.jpg') no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*======== Nairocare Home page here ========*/
+html {
+  box-sizing: border-box;
+  width: 100%;
+  background: url("../images/bg-image.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .container {
-	box-sizing: border-box;
-	height: 100vh;
-	display: flex;
-	flex-flow: column wrap;
-	width: 100%;
-	background: rgba(0,0,0,0.5);
-	padding: 0 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
 }
 
 .container header nav {
-	margin-top: 0;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: center;
+  margin-top: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .container header nav a {
-	text-decoration: none;
-	color: #fff;
-	margin-right: 2em; 
-	font-size: 17px;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 2em;
+  font-size: 17px;
 }
 
-/*.container header nav { border: 2px solid red; }*/
+.container h1 {
+  color: orange;
+  font-weight: bolder;
+  font-size: 42px;
+}
 
-.container h1 { color: orange; font-weight: bolder; font-size: 42px;}
-
-.container p { color: #fff; font-size: 20px; }
+.container p {
+  color: #fff;
+  font-size: 20px;
+}
 .container header nav img {
-	margin-right: 40em;
-
+  margin-right: 40em;
 }
 
 .container button {
-	border-radius: 18px;
-	border: 2px solid orange;
-	width: 12%;
-	padding: 8px 0px;
-	color: orange;
-	font-size: 15px;
-	margin-right: 1em;
+  border-radius: 18px;
+  border: 2px solid orange;
+  width: 12%;
+  padding: 8px 0px;
+  color: orange;
+  font-size: 15px;
+  margin-right: 1em;
 }
 .container .button1 {
-	background-color: orange;
-	color: #fff;
+  background-color: orange;
+  color: #fff;
 }
 
 .container .button2 {
-	/*opacity: 0.2;*/
-	background-color: transparent;
+  /*opacity: 0.2;*/
+  background-color: transparent;
 }
 
-#active { color: orange; }
-.first-div { margin-left: 3em;margin-top: 3em; }
-
+#active {
+  color: orange;
+}
+.first-div {
+  margin-left: 3em;
+  margin-top: 3em;
+}
 
 /* Homepage styling ends here */
+
+/* ============== Add next Section styles here =================*/
