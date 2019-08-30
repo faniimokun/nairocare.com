@@ -99,6 +99,13 @@ html {
     width: 100%;
     height: 100vh;
     background: red;    
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.about-us h1.d-black{
+    font-weight: 900;
+    font-family: 'Fira sans', sans-serif;
 }
 
 /* ABOUT US PAGE DESIGN ENDS HERE */
