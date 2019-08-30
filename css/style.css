@@ -21,15 +21,15 @@ body{
 .homepage .header{
     width: 100%;
     padding: 2px;
-    background: red;
+    background: green;
     display: flex;
 }
 .homepage .header img{
     width: 100px;
-    /* background: yellow; */
+    /* background: yellow */
 }
 .homepage .nav-links{
-    background: blue;
+    background: green;
     margin-left: auto;
 }
 .homepage .nav-links ul {
