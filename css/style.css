@@ -108,14 +108,16 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    
 }
 .about-us h1.d-black{
     font-weight: 900;
     font-size: 2.5em;
-    font-family: 'Fira sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     color: #FFA401;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 1em;
      
 }
 
@@ -123,9 +125,10 @@ body {
     width: 400px;
     height: auto;
     text-rendering: optimizeSpeed;
-    background: #fff;
+    background: rgba(255, 255, 255, .7);
     padding: 20px;
     border-radius: 10px;
+    margin-left: 1em;
 }
 @media (max-width: 900px){
     .about-us section.section-info{
@@ -135,9 +138,13 @@ body {
 .about-us section.section-info h1{
     font-size: 2em;
     color: #014127;
-    font-family: 'Fira sans', sans-serif;
+    font-family: 'Playfair Display', serif;
     line-height: 1.5;
     margin-bottom: 20px;
+}
+.about-us section.section-info p{
+    color: #222222;
+    font-family: 'Raleway', sans-serif;
 }
 
 
