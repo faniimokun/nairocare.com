@@ -21,25 +21,14 @@ body {
 }
 
 /*======== Nairocare Home page here ========*/
-/* html { */
-  /* box-sizing: border-box;
-  width: 100%;
-  background: url("../images/bg-image.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-/* } */
-
-.container {
+.first-section {
   box-sizing: border-box;
   height: 100vh;
-  /* display: flex;
-  flex-flow: column wrap; */
+  /*display: flex;
+  flex-flow: column nowrap; */
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   padding: 0 30px;
-  width: 100%;
   background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url("https://res.cloudinary.com/laviedegeorge/image/upload/v1567198187/startng/nairo_images/bg-image_vm4qql.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -47,54 +36,63 @@ body {
   background-size: cover;
 }
 
-.container header nav {
+.first-section header nav {
   margin-top: 0;
   display: flex;
  /*  flex-flow: row nowrap; */
   justify-content: space-between;
   align-items: center;
+/*   border: 2px solid green; */
+}
+.icon {
+  display: none;
+  color: lime;
 }
 
-.container header nav ul li a {
+#nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+
+#nav-items a {
   text-decoration: none;
   color: #fff;
   margin-right: 2em;
   font-size: 17px;
 }
 
-.container h1 {
+.first-div {
+  margin-left: 1em;
+  margin-top: 4em;
+}
+
+.first-section h1 {
   color: orange;
   font-weight: bolder;
-  font-size: 42px;
+  font-size: 48px;
 }
 
-.container p {
+.first-section p {
   color: #fff;
-  font-size: 20px;
-}
-/* .container header nav img {
-  margin-right: 40em;
-} */
-.container header nav ul{
-  display: flex;
-  list-style-type: none;
+  font-size: 25px;
 }
 
-.container button {
+.first-div button {
   border-radius: 18px;
   border: 2px solid orange;
-  width: 12%;
-  padding: 8px 0px;
+  width: 200px;
+  padding: 10px 5px;
   color: orange;
-  font-size: 15px;
-  margin-right: 1em;
+  font-size: 17px;
+  margin-right: 15px;
 }
-.container .button1 {
+.donate-btn {
   background-color: orange;
-  color: #fff;
+  color: #fff !important;
 }
 
-.container .button2 {
+.get-involved-btn {
   /*opacity: 0.2;*/
   background-color: transparent;
 }
@@ -102,11 +100,45 @@ body {
 #active {
   color: orange;
 }
-.first-div {
-  margin-left: 1em;
-  margin-top: 6em;
+
+@media(max-width: 900px){
+  .first-div {
+   width:auto ; margin: auto;
+
+ }
 }
 
+@media screen and (max-width: 650px){
+  .first-section {
+    width: auto; 
+/*     border: 2px solid red; */
+  }
+  .first-section button {
+    /*display: inline-block;*/
+  }
+  .first-section h1 {
+    font-size: 40px;
+  }
+  .first-section p {
+    font-size: 20px;
+  }
+  #nav-items {
+    display: none;
+  }
+  .icon { display: block; }
+  .first-div {
+    margin: auto;
+  }
+}
+
+@media(max-width: 500px) {
+  #nav-items { display: none; }
+  .icon{ display: block; }
+/*   .first-section { border: 2px solid blue; } */
+  .first-div { margin: auto;border:1px solid yellow; }
+  .donate-btn { background-color: darkgreen; border:none;}
+  .get-involved-btn { display: none; vertical-align: middle;}
+}
 /* Homepage styling ends here */
 
 /* ============== Add next Section styles here =================*/
