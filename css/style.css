@@ -29,7 +29,7 @@ ul{
 /*======== Nairocare Home page here ========*/
 .first-section {
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   padding: 0 30px;
@@ -95,7 +95,6 @@ ul{
 }
 
 .get-involved-btn {
-  /*opacity: 0.2;*/
   background-color: transparent;
 }
 
@@ -103,18 +102,6 @@ ul{
   color: orange !important;
 }
 
-@media(max-width: 900px){
-  .first-div {
-   width:auto ; margin: auto;
-
- }
-}
-
-@media screen and (max-width: 650px){
-  .first-section {
-    width: auto; 
-/*     border: 2px solid red; */
-  }
 
   .first-section h1 {
     font-size: 40px;
@@ -131,14 +118,6 @@ ul{
   }
 }
 
-@media(max-width: 500px) {
-  #nav-items { display: none; }
-  .icon{ display: block; }
-/*   .first-section { border: 2px solid blue; } */
-  .first-div { margin: auto;border:1px solid yellow; }
-  .donate-btn { background-color: darkgreen; border:none;}
-  .get-involved-btn { display: none; vertical-align: middle;}
-}
 /* Homepage styling ends here */
 
 /* ============== Add next Section styles here =================*/
@@ -150,7 +129,7 @@ ul{
   background-color: #E5E5E5;
 }
 .background{
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 45% 45%;
   grid-gap: 5%;
@@ -256,6 +235,10 @@ color: #fff;
   background-position: bottom center;
   color: #fff;
 }
+.do{
+  font-size: 30px;
+  font-weight: bold;
+}
 form{
   background-color: #e5e5e547;
   border-radius: 10px;
@@ -302,6 +285,10 @@ form{
 .secure img{
   width: 80%;
 }
+/* DONATE ENDS HERE */
+
+/* FOOTER STARTS HERE */
+
 footer{
   background-color: #014127;
   color: #fff;
@@ -350,4 +337,44 @@ footer{
   justify-content: space-evenly;
   font-weight: bold;
   padding-right: 25px;
+}
+
+/* FOOTER ENDS HERE */
+
+/* MEDIA QUERIES */
+@media(max-width: 900px){
+  .first-div {
+   width:auto ; margin: auto;
+
+ }
+}
+
+@media screen and (max-width: 650px){
+  .first-section {
+    width: auto; 
+/*     border: 2px solid red; */
+  }
+
+
+@media(max-width: 500px) {
+  #nav-items { display: none; }
+  .icon{ display: block; }
+  .first-div { margin: auto; }
+  .donate-btn { background-color: darkgreen; border:none;}
+  .get-involved-btn { display: none; vertical-align: middle;}
+}
+
+@media(max-width: 320px) {
+  body{
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .background, .kc_info, .kc_donate{
+    display: block;
+    height: auto;
+    padding: 10px;
+  }
+  form{
+    padding: 15px;
+  }
 }
