@@ -50,7 +50,8 @@ You may watch a video guide here: https://egghead.io/lessons/javascript-how-to-f
 7. name position
 
 
-## For viewers:
+## For viewers: If you just want to explore and see how this site look.
+This site is hosted on *webhostapp*. You may click on this link to view and explore.
+*https://nairocare.000webhostapp.com/*
 
-This site is hosted on blabla. You may click on this link to view and explore.
-`'linkto hosted site'`
+```Please reach out to the team executive about your observation and areas of improvement. Thank you``` 
