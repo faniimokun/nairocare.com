@@ -1,303 +1,340 @@
 /* Prefixes added to support all browsers */
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+ /* I commented this out cause it's affecting the br tag*/
+/* * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } */
+  @font-face {
+    font-family: geometria;
+    src: url('../css/Geometria/Geometria-Light.ttf') format('truetype');
+  
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: geometria;
+   
+  }
+/* Layout for mobile & desktop view */
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
 }
-@font-face {
-  font-family: geometria;
-  src: url('../css/Geometria/Geometria-Light.ttf') format('truetype');
-
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: geometria;
- 
-}
-
-/*======== Nairocare Home page here ========*/
-/* html { */
-  /* box-sizing: border-box;
-  width: 100%;
-  background: url("../images/bg-image.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; */
-/* } */
-
-.container {
-  box-sizing: border-box;
-  height: 100vh;
-  /* display: flex;
-  flex-flow: column wrap; */
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 0 30px;
-  width: 100%;
-  background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url("https://res.cloudinary.com/laviedegeorge/image/upload/v1567198187/startng/nairo_images/bg-image_vm4qql.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.container header nav {
-  margin-top: 0;
-  display: flex;
- /*  flex-flow: row nowrap; */
-  justify-content: space-between;
-  align-items: center;
-}
-
-.container header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  margin-right: 2em;
-  font-size: 17px;
-}
-
-.container h1 {
-  color: orange;
-  font-weight: bolder;
-  font-size: 42px;
-}
-
-.container p {
-  color: #fff;
-  font-size: 20px;
-}
-/* .container header nav img {
-  margin-right: 40em;
-} */
-.container header nav ul{
-  display: flex;
-  list-style-type: none;
-}
-
-.container button {
-  border-radius: 18px;
-  border: 2px solid orange;
-  width: 12%;
-  padding: 8px 0px;
-  color: orange;
-  font-size: 15px;
-  margin-right: 1em;
-}
-.container .button1 {
-  background-color: orange;
-  color: #fff;
-}
-
-.container .button2 {
-  /*opacity: 0.2;*/
-  background-color: transparent;
-}
-
-#active {
-  color: orange;
-}
-.first-div {
-  margin-left: 1em;
-  margin-top: 6em;
-}
-
-/* Homepage styling ends here */
-
-/* ============== Add next Section styles here =================*/
-
-/* WELCOME PAGE DESIGN HERE */
-.welcome{
-    width: 100%;
-    min-height: 100vh;
-    background: #fff; 
-       /* background image will still be added */
+.nav-collapse{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+}
+#logo{
+    width: 100px;
+    height: 100px;
+}
+#menubtn{
+    margin: 30px;
+    margin-bottom: 0;
+}
+.nav-full{
+    display: none;
+}
+.dropdown {
+    position: relative;
+    display: block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    margin-left: 20px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: orange}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .homepage{
+        background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url("https://res.cloudinary.com/modupe/image/upload/v1567156677/Nairocare/2915A05C-982F-4C79-8862-7466A4E1FD96_gpugmw.jpg") no-repeat center center fixed;
+        width: auto;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 750px;
+  }
+  .homepage-content h1 {
+    color: orange;
+    font-weight: bolder;
+    font-size: 50px;
+    margin-bottom: 0; 
+  }
+  .homepage-content {
+    text-align: center;
+    margin-top: 0;
     padding: 20px;
+  }
+  
+  .homepage-content p {
+    color: #fff;
+    font-size: 25px;
+    margin-top: 0;
+    text-align: center;
+    padding: 20px;
+  }
+  #button1,#button2,#button3{
+    text-align: center;
+    text-decoration: none;
+    border-radius: 18px;
+    border: 2px solid orange;
+    padding: 10px 20px;
+    color: orange;
+    font-size: 15px;
+    margin-right: 1em;
+    
+  }
+  #button1 {
+    background-color: orange;
+    color: #fff;
+  }
+  
+  #button2 {
+    /*opacity: 0.2;*/
+    display: none;
+    background-color: transparent;
+  }
+  #button1:hover{
+    background-color: transparent;
+    color: orange;
+  }
+  #button2:hover{
+    color: #fff;
+  }
+  /* End Of Home Page styling */
+.aboutus{
+    margin-top: 0; 
+    min-height: 750px;
+    padding: 20px;
+    text-align: center;
+    background: #DEDDDC
+}
+.aboutus-image{
+    display: none;
+}
+hr{
+    text-align: center;
+    border: 3px solid orange;
+    margin: 0 25% 0 25%;
+    margin-top: -35px;
+    margin-bottom: 20px;
+}
+.aboutus-header{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.aboutus-content p{
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.aboutus a{
+    text-decoration: none;
+    border-radius: 18px;
+    border: 2px solid rgb;
+    padding: 10px 20px;
+    font-size: 15px;
+    background: rgb(19, 48, 19);
+    border: none;
+    color: #fff;
+    text-align: right;
     
 }
-.welcome h1.d-black{
-    font-weight: 900;
-    font-size: 2.5em;
-    font-family: 'Playfair Display', serif;
-    color: #114400;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 1em;
-     
-}
-
-.welcome section.section-info{
-    width: 400px;
-    height: auto;
-    text-rendering: optimizeSpeed;
-    background: rgzzba(255, 255, 255, .7);
+.ourcause{
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
     padding: 20px;
-    border-radius: 10px;
-    margin-left: 1em;
+    min-height: 150px;
+    background:url('https://res.cloudinary.com/laviedegeorge/image/upload/v1567198192/startng/nairo_images/boy_vokhz0.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    color: #fff;
 }
-@media (max-width: 900px){
-    .welcome section.section-info{
-        width: auto;
-    }
+.ourcause-content{
+    padding: 20px;
 }
-.welcome section.section-info p{
-    color: #222222;
-    font-family: 'Raleway', sans-serif;
+.donate{
+    background: url('https://res.cloudinary.com/laviedegeorge/image/upload/v1567198190/startng/nairo_images/annie_ngbfx1.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 650px;
+    color: #fff;
+    padding: 20px;
 }
-
-
-/* WELCOME PAGE DESIGN ENDS HERE */
-
-
-
-
-/* MORE INFORMATION STARTS HERE */
-
-.kc_info{
-height: 550px;
-width: 100%; 
-display: grid;
-justify-content: center;
-align-items: center;
-grid-template-columns: 45% 40%;
-grid-gap: 5%;
-background:url('https://res.cloudinary.com/laviedegeorge/image/upload/v1567198192/startng/nairo_images/boy_vokhz0.png'); 
-background-size: cover; 
-background-repeat: no-repeat;
-background-position: bottom center;
-color: #fff;
+.donate-header{
+    text-align: center;
+    font-size: 40px;
 }
-.num_donors{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.write_up{
-  font-size: 2em;
-  line-height: 1.5em;
-}
-.num{
-  font-weight: bold;
-  font-size: 1.5em;
-  text-align: center;
-}
-.num > span {
-  font-weight: 100;
-}
-.center{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 25px;
-}
-/* MORE INFORMATION STARTS HERE */
-
-/* DONATION STARTS HERE */
-.kc_donate{
-  width: 100%;
-  height: 550px;
-  display: grid;
-  grid-template-columns: 40% 40%;
-  grid-gap: 3%;
-  align-items: center;
-  justify-content: center;
-  background: url('https://res.cloudinary.com/laviedegeorge/image/upload/v1567198190/startng/nairo_images/annie_ngbfx1.png');
-  background-size: cover; 
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  color: #fff;
+.donate-content p{
+    font-size: 20px;
 }
 form{
-  background-color: #e5e5e547;
-  border-radius: 10px;
-  padding: 15px 0px 15px 50px;
-  color: #fff;
-}
-.b{
-  display: block;
-  margin-top: 10px;
-}
-.input{
-  width: 80%;
-  height: 30px;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  
-}
-.btn{
-  width: 100px;
-  height: 35px;
-  background-color: #FFA401;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  margin-top: 15px;
-}
-
-/* DONATION ENDS HERE */
-
-/* Welcome to our charity starts here */
-img{
-  width: 60%;
-  height: 800px;
-  
-}
-.background{
-  box-sizing: border-box;
-  padding:40px 25px 60px 25px;
-}
-.head{
-  padding-left: 620px;
-  padding-right: 20px; 
-  margin-top:-750px ;
-}
-.top{
-  grid-area: top;  
-  font-size:40px;
-  color: green;
-
-}
-.under{
-  margin-top: -9px;
-  background-color: yellow;
-  width: 97%;
-  height: 5px;
-}
-.below{
-  padding-left: 170px;
-  font-size: 40px;
-  color: green;
-}
-.under2{
-  margin-top: -9px;
-  margin-left: 175px;
-  background-color: yellow;
-  width: 42%;
-  height: 5px;  
-}
-.word{
-  padding-top: 20px;
-}
-.click{
-  background-color: green;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  width: 40%;
-  padding: 3px;
-  margin-top: 30px;
-  margin-left:200px;
-}
-
-a{
-  text-decoration: none;
+    background-color: #b8b2b275;
+    border-radius: 10px;
+    padding: 15px 0px 15px 50px;
+    color: #fff;
+  }
+  .b{
+    display: block;
+    margin-top: 10px;
+  }
+  .input{
+      outline: none;
+    width: 80%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    
+  }
+  .btn{
+    width: 100px;
+    height: 35px;
+    background-color: #FFA401;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    margin-top: 15px;
+  }
+  .nav-full-inner{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+  .nav-content a{
+      color: #fff;
+      text-decoration: none;
+  }
+  .nav-content a:hover{
+    color: orange;  
+  }
+  #active{
+    color: orange;
+  }
+  .nav-content{
+      display: flex;
+      justify-content: space-between;
+      margin: 30px;
+      padding: 20px;
+  }
+  /*  Styles for Desktop view  */
+@media(min-width:900px){
+    .nav-collapse{
+        display: none;
+    }
+    .nav-full{
+        display: block;
+    }
+    .homepage .homepage-content,.homepage .homepage-content p{
+        text-align: left;
+        margin-left: 0.8em;
+        margin-top: 0.2em;
+    }
+    .homepage-content p{
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    #button2{
+        display: inline-block;
+    }
+    .aboutus{
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        padding-top: 50px;
+        text-align: right;
+    }
+    .aboutus-header{
+        font-size: 35px;
+    }
+    .aboutus-content {
+        min-height: 200px;
+        margin-bottom: 0;
+        padding: 0;
+        color: #000;
+        font-size: 16px;
+    }
+    .aboutus-content p,.aboutus-content h1{
+        text-align: right;
+    }
+    .aboutus-image{
+        display: block;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        width: 100%;
+        height: 600px;
+    }
+    #get-btn{
+        text-align: right;
+    }
+    .ourcause{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 200px;
+        padding: 50px;
+        margin: 0;
+        grid-gap: 10px;
+    }
+    .ourcause-content{
+        margin: 0;
+    }
+    .num-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .donate{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 10%; 
+        height: 500px;
+        grid-gap: 10px;
+    }
+    .donate-content hr{
+    margin-left: 10px;
+    margin-right: 400px;
+    margin-top: -35px;
+    margin-bottom: 20px;
+    }
+    .donate-content h1{
+        text-align: left;
+        font-size: 60px; 
+    }
+    .donate-content p{
+        font-size: 30px;
+        text-align: right;
+    }
+    form{
+        height: 400px;
+        margin: 10px;
+    }
 }

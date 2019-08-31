@@ -19,24 +19,9 @@
     font-family: geometria;
    
   }
-  header nav {
-    margin-top: 0;
-    display: flex;
-   /*  flex-flow: row nowrap; */
-    justify-content: space-between;
-    align-items: center;
-    background: black; 
-    /* Background should be later changed to transparent */
-  }
-  header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    margin-right: 2em;
-    font-size: 17px;
-  }
-  header nav ul{
-    display: flex;
-    list-style-type: none;
+  .container{
+      display: grid;
+      grid-template-columns: 1fr;
   }
 /* ============== Add next Section styles here =================*/
 
@@ -158,6 +143,86 @@
     font-weight: bold;
     box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
 }
+.nav-collapse{
+    display: none;
+}
+.nav-full{
+    display: block;
+}
+.nav-full-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.nav-content a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-content a:hover{
+  color: orange;  
+}
+#active{
+  color: orange;
+}
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 20px;
+}
 
+@media(max-width:900px){
+    .nav-collapse{
+        display: none;
+    }
+    
+    .nav-collapse{
+        display: flex;
+        justify-content: space-between;
+    }
+    #logo{
+        width: 100px;
+        height: 100px;
+    }
+    #menubtn{
+        margin: 30px;
+        margin-bottom: 0;
+    }
+    .nav-full{
+        display: none;
+    }
+    .dropdown {
+        position: relative;
+        display: block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 300px;
+        margin-left: 20px;
+        text-align: center;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      /* color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: orange}
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .about-us{
+        min-height: 720px;
+    }
+}
 
 /* ABOUT US PAGE DESIGN ENDS HERE */
