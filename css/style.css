@@ -19,13 +19,14 @@ body {
   font-family: geometria;
  
 }
+a{
+  text-decoration: none;
+}
 
 /*======== Nairocare Home page here ========*/
 .first-section {
   box-sizing: border-box;
   height: 100vh;
-  /*display: flex;
-  flex-flow: column nowrap; */
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   padding: 0 30px;
@@ -39,10 +40,8 @@ body {
 .first-section header nav {
   margin-top: 0;
   display: flex;
- /*  flex-flow: row nowrap; */
   justify-content: space-between;
   align-items: center;
-/*   border: 2px solid green; */
 }
 .icon {
   display: none;
@@ -113,9 +112,7 @@ body {
     width: auto; 
 /*     border: 2px solid red; */
   }
-  .first-section button {
-    /*display: inline-block;*/
-  }
+
   .first-section h1 {
     font-size: 40px;
   }
@@ -143,52 +140,50 @@ body {
 
 /* ============== Add next Section styles here =================*/
 
-/* WELCOME PAGE DESIGN HERE */
-.welcome{
-    width: 100%;
-    min-height: 100vh;
-    background: #fff; 
-       /* background image will still be added */
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    
+/* GET INVOVLED STARTS HERE */
+
+.get-involved{
+  width: 100%;
+  background-color: #E5E5E5;
 }
-.welcome h1.d-black{
-    font-weight: 900;
-    font-size: 2.5em;
-    font-family: 'Playfair Display', serif;
-    color: #114400;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 1em;
-     
+.background{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 5%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.img_div img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: contain;
 }
 
-.welcome section.section-info{
-    width: 400px;
-    height: auto;
-    text-rendering: optimizeSpeed;
-    background: rgzzba(255, 255, 255, .7);
-    padding: 20px;
-    border-radius: 10px;
-    margin-left: 1em;
+.head{
+  text-align: right;
 }
-@media (max-width: 900px){
-    .welcome section.section-info{
-        width: auto;
-    }
-}
-.welcome section.section-info p{
-    color: #222222;
-    font-family: 'Raleway', sans-serif;
+.top, .below{
+font-size: 25px;
+font-weight:bold;
+color: #22352B;
 }
 
 
-/* WELCOME PAGE DESIGN ENDS HERE */
 
 
+.click{
+  background-color:#22352B;
+  color: #fff;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  margin-top: 15px;
+  border: none;
+}
 
+/* GET INVOVLED ENDS HERE */
 
 /* MORE INFORMATION STARTS HERE */
 
@@ -275,61 +270,3 @@ form{
   margin-top: 15px;
 }
 
-/* DONATION ENDS HERE */
-
-/* Welcome to our charity starts here */
-img{
-  width: 60%;
-  height: 800px;
-  
-}
-.background{
-  box-sizing: border-box;
-  padding:40px 25px 60px 25px;
-}
-.head{
-  padding-left: 620px;
-  padding-right: 20px; 
-  margin-top:-750px ;
-}
-.top{
-  grid-area: top;  
-  font-size:40px;
-  color: green;
-
-}
-.under{
-  margin-top: -9px;
-  background-color: yellow;
-  width: 97%;
-  height: 5px;
-}
-.below{
-  padding-left: 170px;
-  font-size: 40px;
-  color: green;
-}
-.under2{
-  margin-top: -9px;
-  margin-left: 175px;
-  background-color: yellow;
-  width: 42%;
-  height: 5px;  
-}
-.word{
-  padding-top: 20px;
-}
-.click{
-  background-color: green;
-  border-radius: 10px;
-  color: white;
-  text-align: center;
-  width: 40%;
-  padding: 3px;
-  margin-top: 30px;
-  margin-left:200px;
-}
-
-a{
-  text-decoration: none;
-}
