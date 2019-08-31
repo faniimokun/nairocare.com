@@ -44,7 +44,7 @@
 .about-us{
     width: 100%;
     min-height: 80;
-    background: crimson;    
+    background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../Donate.png');    
     display: flex;
     flex-direction: column;
     padding: 20px;
