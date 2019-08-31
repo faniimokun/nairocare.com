@@ -6,27 +6,31 @@ This is a team project for Team Nairobi and very much in development stage.
 You may read the project proposal for details and understand what is on the project team's mind.
 
 ## How to Contribute to this Projects;
-Read our contributing guide to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to this project.
 Please to contribute to this project you must strictly adhere to this rules itemised.
-1.
-2.
-3.
+1. Fork the repo
+2. Clone your fork
+3. Create a branch
+4. Make your changes and try to make a test or commit your changes with ```--no-verify``` and make a pull request
+5. push your changes to your fork with ```git push```
+6. Create a pull request and properly highlight your changes
+7. Get merged
+You may watch a video guide here: 
 
 ## How to run or check this project
- Step One: 
+ `Step One:` 
     open the github link https://github.com/faniimokun/nairocare.com;
- Step Two:
+ *Step Two:*
     Click on "clone or download" on the right hand side of the page just below contributors
- Step Three:
+ *Step Three:*
     Decide cloning with https or ssh. And use the appropriate connection by clicking on "Use HTTPS" or "Use SSH"
-Step Four:
+`Step Four:`
     Click on the copy icon in front of the display link below "Use a password protected SSH key" if you choose "Use SSH" OR below "Use Git or checkout with SVN using the web URL" if you choose "Use HTTPS"
-Step Five:
+`Step Five:`
     On any of your computer terminal (git bash or cmd, etc) cd into the directory you like to keep the project.
-Step Six:
+`Step Six:`
     Then run this command git clone "here you paste the url path copied in step 4"
     e.g for "Use HTTPS" it is git clone https://github.com/faniimokun/nairocare.com.git
-Step Seven:
+`Step Seven:`
     cd into the project folder nairocare.com from the current directory like this :cd nairocare.com
     Then open index.html file with any browser to view the work done and you can go ahead edit and contribute as reqired. NOTE to contribute see ```How to Contribute to this Projects```;
 
