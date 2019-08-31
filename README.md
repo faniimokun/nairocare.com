@@ -19,7 +19,7 @@ You may watch a video guide here: https://egghead.io/lessons/javascript-how-to-f
 ## How to run or check this project
  `Step One:` 
     open the github link https://github.com/faniimokun/nairocare.com;
-    
+
  `Step Two:`
     Click on "clone or download" on the right hand side of the page just below contributors
 
@@ -40,10 +40,10 @@ You may watch a video guide here: https://egghead.io/lessons/javascript-how-to-f
     cd into the project folder nairocare.com from the current directory like this :cd nairocare.com
     Then open index.html file with any browser to view the work done and you can go ahead edit and contribute as reqired. NOTE to contribute see ```How to Contribute to this Projects```;
 
-## Team Nairo Executives:
-1. name position
-2. name position
-3. name position
+## Team Nairobi Executives:
+1. Ghubname position
+2. Ghubname position
+3. Ghubname position
 4. name position
 5. name position
 6. name position
