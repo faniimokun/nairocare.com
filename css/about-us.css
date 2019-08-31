@@ -44,7 +44,7 @@
 .about-us{
     width: 100%;
     min-height: 80;
-    background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../Donate.png');    
+    background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../Donate.png') no-repeat center center;    
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -56,21 +56,27 @@
     color: #FFA401;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 20px;
     
      
 }
 
 .about-us section.section-info{
-    width: 400px;
+    width: 420px;
     height: auto;
     text-rendering: optimizeSpeed;
     background: rgba(255, 255, 255, .5);
     padding: 20px;
     border-radius: 10px;
+    margin-left: 20px;
 }
 @media (max-width: 900px){
+    .about-us h1.d-black{
+        margin: 0;
+    }
     .about-us section.section-info{
         width: auto;
+        margin: 0;
     }
 }
 .about-us section.section-info h1{
