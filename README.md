@@ -48,3 +48,9 @@ You may watch a video guide here: https://egghead.io/lessons/javascript-how-to-f
 5. name position
 6. name position
 7. name position
+
+
+## For viewers:
+
+This site is hosted on blabla. You may click on this link to view and explore.
+`'linkto hosted site'`
