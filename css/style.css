@@ -107,8 +107,8 @@ body {
 
 /* ============== Add next Section styles here =================*/
 
-/* ABOUT US PAGE DESIGN HERE */
-.about-us{
+/* WELCOME PAGE DESIGN HERE */
+.welcome{
     width: 100%;
     min-height: 100vh;
     background: #fff; 
@@ -118,45 +118,38 @@ body {
     padding: 20px;
     
 }
-.about-us h1.d-black{
+.welcome h1.d-black{
     font-weight: 900;
     font-size: 2.5em;
     font-family: 'Playfair Display', serif;
-    color: #FFA401;
+    color: #114400;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 1em;
      
 }
 
-.about-us section.section-info{
+.welcome section.section-info{
     width: 400px;
     height: auto;
     text-rendering: optimizeSpeed;
-    background: rgba(255, 255, 255, .7);
+    background: rgzzba(255, 255, 255, .7);
     padding: 20px;
     border-radius: 10px;
     margin-left: 1em;
 }
 @media (max-width: 900px){
-    .about-us section.section-info{
+    .welcome section.section-info{
         width: auto;
     }
 }
-.about-us section.section-info h1{
-    font-size: 2em;
-    color: #014127;
-    font-family: 'Playfair Display', serif;
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
-.about-us section.section-info p{
+.welcome section.section-info p{
     color: #222222;
     font-family: 'Raleway', sans-serif;
 }
 
 
-/* ABOUT US PAGE DESIGN ENDS HERE */
+/* WELCOME PAGE DESIGN ENDS HERE */
 
 
 
