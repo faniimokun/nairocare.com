@@ -98,7 +98,7 @@ body {
 }
 
 #active {
-  color: orange;
+  color: orange !important;
 }
 
 @media(max-width: 900px){
