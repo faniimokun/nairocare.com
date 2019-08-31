@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+
+@font-face {
+  font-family: geometria;
+  src: url("../css/Geometria/Geometria-Light.ttf") format("truetype");
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 30px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://res.cloudinary.com/laviedegeorge/image/upload/v1567198187/startng/nairo_images/bg-image_vm4qql.jpg")
+      no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: geometria;
+}
+
+/* STYLING OF TAGS IN HEADER ELEMENT */
+header nav {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 2em;
+  font-size: 17px;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #014127;
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+}
+
+/* STYLING OF EVERYTHING INSIDE THE FORM CONTAINER */
+.form-style {
+  background: rgba(250, 250, 250, 0.28);
+  padding: 30px;
+  margin: 50px 15% 50px 15%;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.form-style div {
+  display: block;
+  margin-bottom: 10px;
+  min-height: 35px;
+}
+.form-style div .field-style {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 8px;
+  outline: none;
+  border: 1px solid #ffc001;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+.form-style div .field-style:focus {
+  box-shadow: 0 0 5px #ffc001;
+  border: 1px solid #ffc001;
+}
+
+::placeholder {
+  color: #404040;
+  font-size: 0.75em;
+}
+.form-style p {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+.form-style div .field-split {
+  width: 49%;
+  background-color: rgba(250, 250, 250, 0.2);
+  color: black;
+  font: 1em Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.form-style div input.align-left {
+  float: left;
+}
+.form-style div input.align-right {
+  float: right;
+}
+.form-style div textarea {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(250, 250, 250, 0.2);
+  color: black;
+  font: 1em Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.form-style div input[type="submit"] {
+  -moz-box-shadow: inset 0px 1px 0px 0px #ffbb01;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #ffbb01;
+  box-shadow: inset 0px 1px 0px 0px #ffc001;
+  background-color: #014127;
+  border: 1px solid #ffbb01;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 8px 18px;
+  text-decoration: none;
+  font: 20px Arial, Helvetica, sans-serif;
+  float: right;
+}
+
+.form-style div input[type="submit"]:hover {
+  background: linear-gradient(to bottom, #ffbb01 5%, #ff8d01 100%);
+  background-color: #ff8d01;
+}
+
+/* FOR RESPONSIVENESS ON MOBILE */
+@media screen and (max-width: 600px) {
+  .form-style div input.align-left {
+    float: none;
+  }
+  .form-style div input.align-right {
+    float: none;
+  }
+  .form-style div .field-split {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-style div {
+    margin-bottom: 0px;
+  }
+  header nav ul li a {
+    margin-right: 1.2em;
+    font-size: 13px;
+  }
+}
