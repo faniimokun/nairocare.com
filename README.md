@@ -2,10 +2,11 @@
 WebApp for donations to NairoCare Foundation
 
 ## About this Project
-This is a team project for Team Nairobi.
+This is a team project for Team Nairobi and very much in development stage.
 You may read the project proposal for details and understand what is on the project team's mind.
 
 ## How to Contribute to this Projects;
+Read our contributing guide to learn about our development process, how to propose bugfixes and improvements, and how to build and test your changes to this project.
 Please to contribute to this project you must strictly adhere to this rules itemised.
 1.
 2.
