@@ -1,0 +1,44 @@
+/* ============== Add next Section styles here =================*/
+
+/* ABOUT US PAGE DESIGN HERE */
+.about-us{
+    width: 100%;
+    min-height: 100vh;
+    background: crimson;    
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.about-us h1.d-black{
+    font-weight: 900;
+    font-size: 2.5em;
+    font-family: 'Fira sans', sans-serif;
+    color: #FFA401;
+    margin-top: 30px;
+    margin-bottom: 30px;
+     
+}
+
+.about-us section.section-info{
+    width: 400px;
+    height: auto;
+    text-rendering: optimizeSpeed;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+@media (max-width: 900px){
+    .about-us section.section-info{
+        width: auto;
+    }
+}
+.about-us section.section-info h1{
+    font-size: 2em;
+    color: #014127;
+    font-family: 'Fira sans', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+/* ABOUT US PAGE DESIGN ENDS HERE */
