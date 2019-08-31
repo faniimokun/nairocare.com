@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nairocare | Home</title>
-    <link rel='shortcut icon' href='images/nairocare-main-trans.png' type='image/x-icon' />
+    <link rel='shortcut icon'
+        href='https://res.cloudinary.com/laviedegeorge/image/upload/v1567198184/startng/nairo_images/nairocare-main-trans_szcp2z.png'
+        type='image/x-icon' />
     <link
         href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat|Playfair+Display|Raleway|Roboto&display=swap"
         rel="stylesheet">
@@ -16,19 +18,21 @@
 <body>
 
     <!-- NOTE: IF YOU WANT TO ADD ANY CONTRIBUTION PLEASE MAKE SURE IT IS WITHIN THE COMMENTS SO THAT WE CAN KEEP TRACK OF THE CHANGES MADE -->
-  
-    <!-- Home page code starts here --> 
+
+    <!-- Home page code starts here -->
     <div class="container">
 		<header>
 			<nav>
-				<img src="images/nairocare-main-trans.png" alt="Nairocare-logo" width="150px" height="150px">
-				<a href="#" id="active">Home</a>
-				<a href="">Get Involved</a>
-				<a href="">About Us</a>
-				<a href="">Talk To Us</a>	
+				<img src="https://res.cloudinary.com/laviedegeorge/image/upload/v1567198184/startng/nairo_images/nairocare-main-trans_szcp2z.png" alt="Nairocare-logo" width="100px" height="100px">
+				<ul>
+                    <li><a href="#" id="active">Home</a></li>
+                    <li><a href="">Get Involved</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Talk To Us</a></li>
+                </ul>	
 			</nav>
 		</header>
-		<br><br><br><br><br><br>
+		<!-- <br><br><br><br><br><br> -->
 		<section>
 			<div class="first-div">
 				<h1>We make Nonprofit <br>Fundraising Easier</h1><br>
@@ -53,25 +57,82 @@
     </div>
     <!-- Our Ledger code ends here-->
 
-    <!-- About us code starts here -->
-    <div class="about-us" id="about-us">
-            <h1 class="d-black">About Us</h1>
+    <!-- Welcome code starts here -->
+    <div class="welcome" id="welcome">
+        <h1 class="d-black">Welcome to Our Charity</h1>
         <section class="section-info">
-            <h1>We are changing millions of lives through technology and charity</h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptatibus necessitatibus, ipsa perspiciatis laboriosam tenetur adipisci hic consequatur consequuntur incidunt enim maxime magni, reprehenderit ab, esse aliquam ex quibusdam consectetur?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptatibus necessitatibus, ipsa perspiciatis laboriosam tenetur adipisci hic consequatur consequuntur incidunt enim maxime magni, reprehenderit ab, esse aliquam ex quibusdam consectetur?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptatibus necessitatibus, ipsa
+                perspiciatis laboriosam tenetur adipisci hic consequatur consequuntur incidunt enim maxime magni,
+                reprehenderit ab, esse aliquam ex quibusdam consectetur?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptatibus necessitatibus, ipsa
+                perspiciatis laboriosam tenetur adipisci hic consequatur consequuntur incidunt enim maxime magni,
+                reprehenderit ab, esse aliquam ex quibusdam consectetur?
             </p>
         </section>
     </div>
-    <!-- About us code ends here -->
+    <!-- Welcome code ends here -->
 
     <!-- Talk to us code starts here -->
-    <div class="talk-to-us" id="talk-to-us">
+    <!-- <div class="talk-to-us" id="talk-to-us">
 
-    </div>
+    </div> -->
     <!-- Talk to us code ends here -->
 
+    <!-- more information starts here -->
+    <section class="kc_info">
+
+        <p class="write_up">
+            We love to help all children that have problems in the world. <br> After **** we have some goals achieved.
+        </p>
+        <div class="num_donors">
+            <div class="kc_num-helped center">
+                <img src="https://res.cloudinary.com/laviedegeorge/image/upload/v1567198183/startng/nairo_images/multiple-users-silhouette_ctyqkz.png"
+                    alt="">
+                <p class="num">100 <br> <span>People helped</span> </p>
+            </div>
+            <div class="donors center">
+                <img src="https://res.cloudinary.com/laviedegeorge/image/upload/v1567198184/startng/nairo_images/team_2_dzvjzj.png"
+                    alt="">
+                <p class="num">100 <br><span> Donors</span></p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- more information ends here -->
+
+    <!-- donate starts here -->
+    <section class="kc_donate">
+
+        <div class="kc_donate-cont">
+            <p class="do">Donate</p>
+            <p class="write_up">
+                Our nonprofit customers raise more money online
+                with less effort. Proven to increase event participation
+                and awareness of your cause.
+            </p>
+        </div>
+        <form action="#" method="post">
+            <label for="fullName" class="b">Full Name:</label>
+            <input type="text" class="input" id="fullName">
+            <label for="email" class="b">Email:</label>
+            <input type="email" class="input" name="email" id="email">
+            <div class="amount">
+                <p>Choose your donation amount:</p>
+                <input type="radio" value="N1000">N1000 <br>
+                <input type="radio" value="N10000">N10000 <br>
+                <input type="radio" value="N100000">N100000 <br>
+            </div>
+            <div class="other-amt">
+                <label for="otherAmt" class="b">Other Amount</label>
+                <input type="text" id="otherAmt" class="input">
+            </div>
+            <button type="submit" class="btn">Donate</button>
+        </form>
+    </section>
+
+    <!-- donate ends here -->
 
 
 </body>
