@@ -198,8 +198,18 @@ h1 {
   background: linear-gradient(to bottom, #ffbb01 5%, #ff8d01 100%);
   background-color: #ff8d01;
 }
+.menu {
+  display: none;
+}
+.menu div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(224, 224, 224);
+  margin: 5px;
+  transition: all 0.5s ease;
+}
 
-/* FOR RESPONSIVENESS ON MOBILE */
+/* FOR RESPONSIVENESS ON Tablets */
 @media screen and (max-width: 600px) {
   .form-style div input.align-left {
     float: none;
@@ -218,5 +228,82 @@ h1 {
   header nav ul li a {
     margin-right: 1.2em;
     font-size: 13px;
+  }
+}
+
+/* FOR RESPONSIVENESS ON Mobile */
+@media screen and (max-width: 400px) {
+  .form-style div input.align-left {
+    float: none;
+  }
+  .form-style div input.align-right {
+    float: none;
+  }
+  .form-style div .field-split {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .form-style div {
+    margin-bottom: 0px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 10vh;
+    background-color: rgb(87, 87, 87, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.2s fade-in;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: rgb(253, 163, 2);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 20px 0px;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  .nav_item {
+    height: 40px;
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .Line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .Line2 {
+    opacity: 0;
+  }
+  .toggle .Line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 }
