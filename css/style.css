@@ -357,7 +357,17 @@ footer{
 
 
 @media(max-width: 500px) {
-  #nav-items { display: none; }
+  #nav-items { 
+    display: block;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
   .icon{ display: block; }
   .first-div { margin: auto; }
   .donate-btn { background-color: darkgreen; border:none;}
