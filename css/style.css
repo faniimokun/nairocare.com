@@ -355,6 +355,7 @@ footer{
 /*     border: 2px solid red; */
   }
 
+/* Navigation css starts here */
 
 @media(max-width: 500px) {
   #nav-items { 
@@ -387,12 +388,15 @@ i.fa-times{
    margin: auto;
    font-size: 30px;
    font-weight: bold;
+   padding: 10px
  }
   .icon{ display: block; }
   .first-div { margin: auto; }
   .donate-btn { background-color: darkgreen; border:none;}
   .get-involved-btn { display: none; vertical-align: middle;}
 } 
+
+/* Navigation css Ends here */
 
 @media(max-width: 500px) {
   body{
