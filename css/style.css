@@ -48,7 +48,7 @@ ul{
 }
 .icon {
   display: none;
-  color: lime;
+  color:#FFA401;
 }
 
 #nav-items {
@@ -116,7 +116,7 @@ ul{
   .first-div {
     margin: auto;
   }
-}
+
 
 /* Homepage styling ends here */
 
@@ -377,4 +377,5 @@ footer{
   form{
     padding: 15px;
   }
+}
 }
