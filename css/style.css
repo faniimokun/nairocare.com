@@ -368,12 +368,20 @@ footer{
     right: 0;
     left: 0;
     text-align: center;
+    transition: 300ms ease-in-out all;
   }
  #nav-items li{
    margin: auto;
    margin-top: 20px;
    margin-bottom: 20px;
    display: flex;
+ }
+
+i.fa-times{
+  font-size: 100px;
+  margin-top: 20px;
+  align-self: center;
+  margin-left: 30px;
  }
  #nav-items li a{
    margin: auto;
