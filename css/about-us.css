@@ -98,20 +98,37 @@
 
 
 
-.stand-out,.fast,.care{
+.stand-out{
     background: #E5E5E5;
-    display: flex;
     padding: 30px;
-    flex-flow: column wrap;
     align-content: center;
     justify-items: center;
     justify-content: space-between;
 }
+.d-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.stand-out .d-flex section{
+    width: 400px;
+    min-height: 250px;
+    margin: 10px;
+}
+.stand-out h2{
+    color: #014127;
+}
+
 .stand-out h1.header-title{
+    display: block;
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
     font-weight: bolder;
+    color: #014127;
+    font-weight: 900;
+    font-size: 3rem;
 }
 .stand-out img, .fast img, .care img{
     width: 100px;
@@ -121,9 +138,9 @@
     text-align: center;
     margin-bottom: 5px;
 }
-.stand-out p{
+.stand-out p, .fast p, .care p{
     text-align: center;
-    width: 50%;
+    
     /* border: 1px solid red; */
     text-align: justify;
     line-height: 1.5;
