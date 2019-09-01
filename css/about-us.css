@@ -119,9 +119,19 @@
 }
 .stand-out h2{
     text-align: center;
+    margin-bottom: 5px;
 }
 .stand-out p{
     text-align: center;
+    width: 50%;
+    /* border: 1px solid red; */
+    text-align: justify;
+    line-height: 1.5;
+}
+@media (max-width: 700px) {
+    .stand-out p{
+        width: 100%;
+    }
 }
 
 
