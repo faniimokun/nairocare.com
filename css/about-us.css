@@ -17,7 +17,8 @@
     margin: 0;
     padding: 0;
     font-family: geometria;
-   background: url('../Donate.png') no-repeat;
+    background: url('../Donate.png') no-repeat;
+    background-size: cover;
   }
   header nav {
     margin-top: 0;
