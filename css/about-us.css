@@ -98,7 +98,7 @@
 
 
 
-.stand-out{
+.stand-out,.fast,.care{
     background: #E5E5E5;
     display: flex;
     padding: 30px;
@@ -134,12 +134,9 @@
     }
 }
 
-
-
-
-
 .fast{
     background: white;
+    
 }
 .care{
     background: #E5E5E5;
