@@ -17,7 +17,7 @@
     margin: 0;
     padding: 0;
     font-family: geometria;
-   
+   background: url('../Donate.png') no-repeat;
   }
   header nav {
     margin-top: 0;
@@ -25,7 +25,7 @@
    /*  flex-flow: row nowrap; */
     justify-content: space-between;
     align-items: center;
-    background: black; 
+    background:transparent; 
     /* Background should be later changed to transparent */
   }
   header nav ul li a {
@@ -44,7 +44,7 @@
 .about-us{
     width: 100%;
     min-height: 80;
-    background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../Donate.png') no-repeat center ;    
+    /* background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../Donate.png') no-repeat center ; */    
     display: flex;
     flex-direction: column;
     padding: 20px;
