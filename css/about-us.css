@@ -17,36 +17,45 @@
     margin: 0;
     padding: 0;
     font-family: geometria;
-    background: url('../Donate.png') no-repeat;
+    /* background: url('../Donate.png') no-repeat; */
     background-size: cover;
   }
   header nav {
     margin-top: 0;
     display: flex;
-   /*  flex-flow: row nowrap; */
     justify-content: space-between;
     align-items: center;
-    background:transparent; 
-    /* Background should be later changed to transparent */
+    flex-flow: row wrap;
+    background: black;
   }
-  header nav ul li a {
+  
+  .icon {
+    display: none;
+    color:#FFA401;
+    margin-right: 30px;
+  }
+  
+  #nav-items {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  
+  #nav-items a {
     text-decoration: none;
     color: #fff;
     margin-right: 2em;
     font-size: 17px;
-  }
-  header nav ul{
-    display: flex;
-    list-style-type: none;
   }
 /* ============== Add next Section styles here =================*/
 
 /* ABOUT US PAGE DESIGN HERE */
 .about-us{
     width: 100%;
-    min-height: 80;
-    /* background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../Donate.png') no-repeat center ; */    
-    display: flex;
+    min-height: 90vh;
+    background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../Donate.png') no-repeat center center;    
+    background-position: 80% 80%;
+    /* display: flex; */
     flex-direction: column;
     padding: 20px;
 }
@@ -63,13 +72,21 @@
 }
 
 .about-us section.section-info{
-    width: 95%;
+    width: 400px;
     height: auto;
     text-rendering: optimizeSpeed;
     background: rgba(255, 255, 255, .5);
     padding: 20px;
     border-radius: 10px;
     margin-left: 20px;
+}
+.about-us section.section-info p{
+    color: white;
+    font-family: 'geometria', sans-serif;
+    text-rendering: geometricPrecision;
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 600;
 }
 @media (max-width: 900px){
     .about-us h1.d-black{
@@ -87,6 +104,99 @@
     line-height: 1.5;
     margin-bottom: 20px;
     z-index: 1000;
+}
+
+
+
+.stand-out{
+    background: #E5E5E5;
+    padding: 30px;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+.d-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.stand-out .d-flex section{
+    width: 400px;
+    min-height: 250px;
+    margin: 10px;
+}
+.stand-out h2{
+    color: #014127;
+}
+
+.stand-out h1.header-title{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: #014127;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.stand-out img, .fast img, .care img{
+    width: 100px;
+    text-align: center;
+}
+.stand-out h2{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.stand-out p, .fast p, .care p{
+    text-align: center;
+    
+    /* border: 1px solid red; */
+    text-align: justify;
+    line-height: 1.5;
+}
+@media (max-width: 700px) {
+    .stand-out p{
+        width: 100%;
+    }
+}
+
+
+.team{
+    background: white;
+    padding: 30px;
+}
+.team section{
+    margin-bottom: 30px;
+}
+.team section img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* background: red; */
+    box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
+    margin: auto;
+}
+.team section.team-lead{
+    margin: auto;
+}
+.team .text-color{
+    color: #014127;
+}
+.team .a-center{
+    
+    text-align: center;
+}
+.team button{
+    margin-top: 30px;
+    background: #014127;
+    padding: 1em 2em;
+    color: #FFA401;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .rating{
@@ -162,3 +272,47 @@
 
 
 /* ABOUT US PAGE DESIGN ENDS HERE */
+
+/* Navigation css starts here */
+
+@media(max-width: 500px) {
+    #nav-items { 
+      display: none;
+      flex-flow: column wrap;
+      background: rgba(17, 16, 16, 0.8);
+      color: white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      text-align: center;
+      transition: 300ms ease-in-out all;
+    }
+   #nav-items li{
+     margin: auto;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     display: flex;
+   }
+  
+  i.fa-times{
+    font-size: 100px;
+    margin-top: 20px;
+    align-self: center;
+    margin-left: 30px;
+   }
+   #nav-items li a{
+     margin: auto;
+     font-size: 30px;
+     font-weight: bold;
+     padding: 10px
+   }
+    .icon{ display: block; }
+    .first-div { margin: auto; }
+    .donate-btn { background-color: darkgreen; border:none;}
+    .get-involved-btn { display: none; vertical-align: middle;}
+  } 
+  
+  /* Navigation css Ends here */
+  

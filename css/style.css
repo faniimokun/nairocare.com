@@ -355,14 +355,48 @@ footer{
 /*     border: 2px solid red; */
   }
 
+/* Navigation css starts here */
 
 @media(max-width: 500px) {
-  #nav-items { display: none; }
+  #nav-items { 
+    display: none;
+    flex-flow: column wrap;
+    background: rgba(17, 16, 16, 0.8);
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    transition: 300ms ease-in-out all;
+  }
+ #nav-items li{
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: flex;
+ }
+
+i.fa-times{
+  font-size: 100px;
+  margin-top: 20px;
+  align-self: center;
+  margin-left: 30px;
+ }
+ #nav-items li a{
+   margin: auto;
+   font-size: 30px;
+   font-weight: bold;
+   padding: 10px
+ }
   .icon{ display: block; }
   .first-div { margin: auto; }
   .donate-btn { background-color: darkgreen; border:none;}
   .get-involved-btn { display: none; vertical-align: middle;}
 } 
+
+/* Navigation css Ends here */
 
 @media(max-width: 500px) {
   body{
