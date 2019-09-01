@@ -62,7 +62,7 @@
 }
 
 .about-us section.section-info{
-    width: 420px;
+    width: 95%;
     height: auto;
     text-rendering: optimizeSpeed;
     background: rgba(255, 255, 255, .5);
