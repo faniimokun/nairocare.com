@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/talk-to-us.css">
+    <link href="https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans" rel="stylesheet">
     <title>Talk to Us</title>
-    <link rel="stylesheet" href="/nairocare.com/css/talk-to-us.css">
-</head>
-<body>
-    <!-- ALL CODES GOES HERE -->
-</body>
+    <nav>
+        <img src="https://res.cloudinary.com/laviedegeorge/image/upload/v1567198184/startng/nairo_images/nairocare-main-trans_szcp2z.png" alt="Nairocare-logo" width="100px" height="100px">
+        <ul>
+            <li><a href="index.html" id="active">Home</a></li>
+            <li><a href="#">Get Involved</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="talk-to-us.html">Talk To Us</a></li>
+
+        </ul>
+    </nav>
+    <h1>
+        We want to talk to you
+    </h1>
+    <div class="table">
+        <form action="/action_page.php" class="label">
+            <label for="Name" id="name1">Name</label><br>
+            <input type="text" name="name" id="Name" placeholder="Full Name" required><br>
+            <label for="email" id="name2">Email</label><br>
+            <input type="text" name="email" id="email" placeholder="name@gmail.com" required><br>
+            <label for="Phone Number" id="name3">Phone Number</label><br>
+            <input type="varchar" name="Phone Number" id="Phone Number" placeholder="Tel No" required><br>
+            <p id="name4">Talk to Us</p><br>
+            <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Talk to us" required> </textarea>
+        </form>
+        <br>
+        <br>
+        <br>
+        <button type="submit" class="submit">Submit</button>
+    </div>
+    </body>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+    </script>
+
 </html>
