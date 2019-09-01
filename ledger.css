@@ -1,8 +1,40 @@
 body {
     margin: 0px;
     padding: 0px;
+    padding-bottom: 100px;
     text-align: center;
+    background: url(https://res.cloudinary.com/abisola/image/upload/v1567281398/Ledger_exlfgv.png)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: geometria;
 }
+
+
+/* STYLING OF TAGS IN HEADER ELEMENT */
+header nav {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 2em;
+    font-size: 17px;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  
+  
 
 .ledger-view-modal {
     display: none;
@@ -64,21 +96,16 @@ body {
     visibility: hidden;
 }
 
-#edger-wrapper {
-    align-content: center;
-    border: 2px solid red;
-}
 
 #ledger {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 120px;
+    padding-top: 50px;
     padding-left:30px;
     padding-right:30px;
     flex-wrap: wrap;
-    background-image: url(https://res.cloudinary.com/abisola/image/upload/v1567281398/Ledger_exlfgv.png);
 }
 
 
@@ -226,9 +253,7 @@ tr:nth-child(1){
 [view-button]{
     color: white;
     background-color: rgb(35, 145, 114);
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 8% 15%;
     border-radius: 100px;
     border: 1px solid transparent;
 }
@@ -244,4 +269,12 @@ text-decoration: none;
 [view-button]>a:hover{
     color: gold;
     text-decoration: none;
+}
+
+[view-more]{
+    padding: 7px 15px;
+}
+[view-more] > a{
+    font-size: 100%;
+    Padding: 0%;
 }

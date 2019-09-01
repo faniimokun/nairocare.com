@@ -8,21 +8,36 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="ledger.css">
+    <link rel="stylesheet" href="css/ledger.css">
 </head>
 
 <body>
     <div id="view-modal" class="ledger-view-modal">
         <div class="view-modal-content">
             <span id="close">&times;</span>
-            <h2 class = "dod">Details Of Donation</h2>
-            <p class = modal-content>Name Of Donor: <span id = "donor-name"></span> </p>
-            <p class = modal-content>Amount Donated: <span id = "amount-donated"></span></p>
-            <p class = modal-content>Date Of Donation: <span id = "donation-date"></span></p>
+            <h2 class="dod">Details Of Donation</h2>
+            <p class=modal-content>Name Of Donor: <span id="donor-name"></span> </p>
+            <p class=modal-content>Amount Donated: <span id="amount-donated"></span></p>
+            <p class=modal-content>Date Of Donation: <span id="donation-date"></span></p>
         </div>
     </div>
     <div class="ledger-wrapper">
+            <header>
+                    <nav>
+                        <img src="https://res.cloudinary.com/laviedegeorge/image/upload/v1567198184/startng/nairo_images/nairocare-main-trans_szcp2z.png"
+                            alt="Nairocare-logo" width="100px" height="100px">
+                        <ul>
+                            <li><a href="index.html" id="active">Home</a></li>
+                            <li><a href="ledger.html">Ledger</a></li>
+                            <li><a href="volunteer.html">Get Involved</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="talk-to-us.html">Talk To Us</a></li>
+                            <li><a href="team.html">Team</a></li>
+                        </ul>
+                    </nav>
+                </header>
         <div id="ledger">
+            
             <div class="ledger-menu">
                 <h2 class="ledger-table-heading">Recent Donations</h2>
                 <div class=menu-button-div>
@@ -71,42 +86,49 @@
                             <th>ACTION</th>
                         </tr>
                         <tr>
-                            <td class = "td-details td-name">Becky James</td>
-                            <td class = "td-details td-amount">₦120,000</td>
-                            <td class = "td-details td-date" >28-Aug-2019</td>
-                            <td><button view-button type="button" class="one"><a href = "#">View Details</a></button></td>
+                            <td class="td-details td-name">Becky James</td>
+                            <td class="td-details td-amount">₦120,000</td>
+                            <td class="td-details td-date">28-Aug-2019</td>
+                            <td><button view-button type="button" class="one"><a>View Details</a></button></td>
                         </tr>
                         <tr>
-                            <td class = "td-details td-name">Ashogbon Opeyemi</td>
-                            <td class = "td-details td-amount">₦50,000</td>
-                            <td class = "td-details td-date">17-Aug-2019</td>
-                            <td><button view-button type="button" class="two"><a href = "#">View Details</a></button></td>
+                            <td class="td-details td-name">Ashogbon Opeyemi</td>
+                            <td class="td-details td-amount">₦50,000</td>
+                            <td class="td-details td-date">17-Aug-2019</td>
+                            <td><button view-button type="button" class="two"><a>View Details</a></button></td>
                         </tr>
                         <tr>
-                            <td class = "td-details td-name">Ali Salami</td>
-                            <td class = "td-details td-amount">₦90,000</td>
-                            <td class = "td-details td-date">15-Aug-2019</td>
-                            <td> <button view-button type="button" class="three"><a href = "#">View Details</a></button></td>
+                            <td class="td-details td-name">Ali Salami</td>
+                            <td class="td-details td-amount">₦90,000</td>
+                            <td class="td-details td-date">15-Aug-2019</td>
+                            <td> <button view-button type="button" class="three"><a>View Details</a></button>
+                            </td>
                         </tr>
                         <tr>
-                            <td class = "td-details td-name">Rabiu Inuwa Zangina</td>
-                            <td class = "td-details td-amount">₦150,000</td>
-                            <td class = "td-details td-date">14-Aug-2019</td>
-                            <td><button view-button type="button" class="four"><a href = "#">View Details</a></button></td>
+                            <td class="td-details td-name">Rabiu Inuwa Zangina</td>
+                            <td class="td-details td-amount">₦150,000</td>
+                            <td class="td-details td-date">14-Aug-2019</td>
+                            <td><button view-button type="button" class="four"><a>View Details</a></button>
+                            </td>
                         </tr>
                         <tr>
-                            <td class = "td-details td-name">Chisom Okekenwa</td>
-                            <td class = "td-details td-amount">₦120,000</td>
-                            <td class = "td-details td-date">14-Aug-2019</td>
-                            <td><button view-button type="button" class="five"><a href = "#">View Details</a></button></td>
+                            <td class="td-details td-name">Chisom Okekenwa</td>
+                            <td class="td-details td-amount">₦120,000</td>
+                            <td class="td-details td-date">14-Aug-2019</td>
+                            <td><button view-button type="button" class="five"><a>View Details</a></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            
                         </tr>
                     </table>
+                    <button view-button view-more type = button><a href = "under-construction.html">View More</a></button>
                 </div>
             </div>
 
         </div>
     </div>
-    
+
     <script src="ledger.js"></script>
 </body>
 
