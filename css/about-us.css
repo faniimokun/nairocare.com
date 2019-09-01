@@ -160,7 +160,8 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background: red;
+    /* background: red; */
+    box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
     margin: auto;
 }
 .team section.team-lead{
