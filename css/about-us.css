@@ -25,11 +25,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: transparent;
+    flex-flow: row wrap;
+    background: black;
   }
+  
   .icon {
     display: none;
     color:#FFA401;
+    margin-right: 30px;
   }
   
   #nav-items {
