@@ -154,6 +154,26 @@
 
 .team{
     background: white;
+    padding: 30px;
+}
+.team section{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: red;
+}
+.team section.team-lead{
+    margin: auto;
+}
+.team button{
+    background: #014127;
+    padding: 1em 2em;
+    color: #FFA401;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .rating{
