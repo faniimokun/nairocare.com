@@ -88,6 +88,19 @@ body {
     font-family: geometria;
 }
 
+.label {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(250, 250, 250, 0.28);
+   /*  padding: 30px; */
+    /* margin: 50px 15% 50px 15%; */
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+}
+
 
 /* STYLING OF TAGS IN HEADER ELEMENT */
 
@@ -113,9 +126,9 @@ nav ul {
 h1 {
     text-align: center;
     font-size: 4rem;
-    color: #014127;
-    font-family: 'Playfair Display', serif;
-    font-weight: bolder;
+    color: #fff;
+    /* font-family: 'Playfair Display', serif; */
+    font-weight: bold;
 }
 
 ::placeholder {
@@ -232,25 +245,30 @@ textarea {
     font-weight: bold;
 }
 .submit[type="submit"] {
-    -moz-box-shadow: inset 0px 1px 0px 0px #ffbb01;
+    /* -moz-box-shadow: inset 0px 1px 0px 0px #ffbb01;
     -webkit-box-shadow: inset 0px 1px 0px 0px #ffbb01;
-    box-shadow: inset 0px 1px 0px 0px #ffc001;
+    box-shadow: inset 0px 1px 0px 0px #ffc001; */
     background-color: #014127;
-    border: 1px solid #ffbb01;
+    border:none;
     cursor: pointer;
     color: #FFFFFF;
-    padding: 8px 18px;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
     text-decoration: none;
-    font: 20px Arial, Helvetica, sans-serif;
-    float: right;
+    /* font: 20px Arial, Helvetica, sans-serif;
+    float: right; */
 }
 .submit[type="submit"]:hover {
     background: linear-gradient(to bottom, #ffbb01 5%, #ff8d01 100%);
     background-color: #ff8d01;
 }
 .table {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
     border-collapse: collapse;
-    width: 50%;
 }
 
 /* FOR RESPONSIVENESS ON MOBILE */
@@ -272,4 +290,4 @@ textarea {
         margin-bottom: 0px;
     }
 }
-40 volunteer.html
+/* 40 volunteer.html */
