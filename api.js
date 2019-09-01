@@ -1,7 +1,8 @@
 
    document.addEventListener("DOMContentLoaded", function(event) {
     document.getElementById("submit").addEventListener("click", function(e) {
-      var PBFKey = "FLWPUBK_TEST-5b93ed4bf68efaef76c90d8b9394b9bb-X";
+     // var PBFKey = "FLWPUBK_TEST-5b93ed4bf68efaef76c90d8b9394b9bb-X";
+      var   PBFKey =  "FLWPUBK-85c3703685f0d4df927fdafa3e854d97-X";
       var email = document.getElementById('email').value;
       var amount = document.getElementById('amount').value;
       var fullname = document.getElementById('fullName').value;
