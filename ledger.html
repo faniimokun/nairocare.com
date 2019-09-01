@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="view-modal" class="ledger-view-modal">
+        <div class="view-modal-content">
+            <span id="close">&times;</span>
+            <h2 class = "dod">Details Of Donation</h2>
+            <p class = modal-content>Name Of Donor: <span id = "donor-name"></span> </p>
+            <p class = modal-content>Amount Donated: <span id = "amount-donated"></span></p>
+            <p class = modal-content>Date Of Donation: <span id = "donation-date"></span></p>
+        </div>
+    </div>
+    <div class="ledger-wrapper">
+        <div id="ledger">
+            <div class="ledger-menu">
+                <h2 class="ledger-table-heading">Recent Donations</h2>
+                <div class=menu-button-div>
+                    <button type="button" class="ledger-menu-button">
+                        <a href="#ledger"><span class="dot">.</span>Overview </a>
+                    </button>
+                </div>
+                <div class=menu-button-div>
+                    <button type="button" class="ledger-menu-button">
+                        <a href="#ledger">Donations </a>
+                    </button>
+                </div>
+                <div class=menu-button-div>
+                    <button type="button" class="ledger-menu-button" value="expenses">
+                        <a href="#ledger">Expenses </a>
+                    </button>
+                </div>
+            </div>
+            <!--End of ledger menu-->
+
+            <div class="ledger-amount">
+                <div class="ledger-amount-breakdown">
+
+                    <div class=ledger-total-amount>
+                        <h4>Total Donations</h4>
+                        <h2>₦1,500,000.00</h2>
+                    </div>
+                    <div class=ledger-total-amount>
+                        <h4>Total Expenses</h4>
+                        <h2>₦1,000,000.00</h2>
+                    </div>
+                    <div class=ledger-total-amount>
+                        <h4>Available Amount</h4>
+                        <h2>₦500,000.00</h2>
+                    </div>
+                </div>
+
+                <!--End of ledger-amount-breakdown-->
+                <div class="ledger-table">
+
+                    <table>
+                        <tr>
+                            <th>DONOR</th>
+                            <th>AMOUNT</th>
+                            <th>DATE</th>
+                            <th>ACTION</th>
+                        </tr>
+                        <tr>
+                            <td class = "td-details td-name">Becky James</td>
+                            <td class = "td-details td-amount">₦120,000</td>
+                            <td class = "td-details td-date" >28-Aug-2019</td>
+                            <td><button view-button type="button" class="one"><a href = "#">View Details</a></button></td>
+                        </tr>
+                        <tr>
+                            <td class = "td-details td-name">Ashogbon Opeyemi</td>
+                            <td class = "td-details td-amount">₦50,000</td>
+                            <td class = "td-details td-date">17-Aug-2019</td>
+                            <td><button view-button type="button" class="two"><a href = "#">View Details</a></button></td>
+                        </tr>
+                        <tr>
+                            <td class = "td-details td-name">Ali Salami</td>
+                            <td class = "td-details td-amount">₦90,000</td>
+                            <td class = "td-details td-date">15-Aug-2019</td>
+                            <td> <button view-button type="button" class="three"><a href = "#">View Details</a></button></td>
+                        </tr>
+                        <tr>
+                            <td class = "td-details td-name">Rabiu Inuwa Zangina</td>
+                            <td class = "td-details td-amount">₦150,000</td>
+                            <td class = "td-details td-date">14-Aug-2019</td>
+                            <td><button view-button type="button" class="four"><a href = "#">View Details</a></button></td>
+                        </tr>
+                        <tr>
+                            <td class = "td-details td-name">Chisom Okekenwa</td>
+                            <td class = "td-details td-amount">₦120,000</td>
+                            <td class = "td-details td-date">14-Aug-2019</td>
+                            <td><button view-button type="button" class="five"><a href = "#">View Details</a></button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="ledger.js"></script>
+</body>
+
+</html>
