@@ -364,7 +364,7 @@ footer{
   .get-involved-btn { display: none; vertical-align: middle;}
 } 
 
-@media(max-width: 320px) {
+@media(max-width: 500px) {
   body{
     max-width: 100%;
     box-sizing: border-box;
@@ -376,6 +376,9 @@ footer{
   }
   form{
     padding: 15px;
+  }
+  .num_donors{
+    display: block;
   }
 }
 }
