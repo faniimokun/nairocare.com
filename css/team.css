@@ -52,10 +52,13 @@ header nav ul{
     padding: 0;  
 } */
 
+/* .main-container {
+} */
 
+h1 { text-align: center; }
 h2 {
     color: rgb(1, 29, 1);
-  margin-left: 30px;
+  margin-left: 80px;
 }
 
 p  {
@@ -63,11 +66,11 @@ p  {
 }
 div.gallery {
   background-color: white;
-    margin: 5px 150px;;
+    /*margin: 5px 150px;*/
     border: 1px solid #ccc;
     border-radius: 5px; 
-    float: left;
-    width: 180px;
+    /*float: left;*/
+    /*width: 180px;*/
   }
   
   div.gallery:hover {
@@ -115,26 +118,104 @@ div.gallery {
   color: white;
 }
 
-  .column-5-left {
-    width: 150px;
+  .column-5-first {
+    width: 15%;
     padding: 10px;
-    float: left;
     margin-right: 10px;
   }
   
   .column-5-middle {
-    width: 150px;
+    width: 15%;
     padding: 10px;
-    float: left;
-    margin-left: 10px;
     margin-right: 10px;
   }
+  .row { display: flex; flex-wrap: nowrap;justify-content: center;}
  
   .container {
-      padding-top: 30%
+      width: 100%;
+      /*padding-top: 30%;*/
+      /*border: 2px solid blue;*/
+      margin: auto;
   }
 
 .container2 {
-    padding-top: 30%
+    width: 100%;
+    /*padding-top: 30%;*/
+    /*border: 2px solid red;*/
+    margin: auto;
 }
-  
+
+/*    */
+
+.first-section header nav {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  /*position: fixed;*/
+}
+.icon {
+  display: none;
+  color: white;
+}
+
+#nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+
+#nav-items a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 2em;
+  font-size: 17px;
+}
+
+#active {
+  color: orange !important;
+}
+
+@media(max-width: 800px) {
+  #nav-items { display: none;}
+  .icon{ display: block; }
+  /* .main-container {
+
+  } */
+  .row { display: block; }
+
+  h2,p {
+    text-align: center;
+    margin: auto;
+  }
+
+   .column-5-first {
+    width:70%;margin: auto;display: block;
+  }
+  .column-5-middle {
+     width:40%;margin:15px;
+     display: inline-block;
+  }
+
+}
+
+@media(max-width: 500px) {
+  .row { display: block; }
+
+  h2,p {
+    text-align: center;
+    margin: auto;
+  }
+
+  .column-5-first {
+    width:80%;margin: auto;
+    display: block;
+  }
+  .column-5-middle {
+    width:80%;margin: auto;
+    display: block; 
+  }
+
+
+}
