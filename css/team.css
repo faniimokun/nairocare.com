@@ -1,11 +1,59 @@
-body {
-    background-color: rgb(146, 145, 143)
-    margin: 0;  
-    padding: 0;  
+@font-face {
+  font-family: geometria;
+  src: url('../css/Geometria/Geometria-Light.ttf') format('truetype');
+
+}
+body{
+  box-sizing: border-box;
+  height: 100vh;
+  /* display: flex;
+  flex-flow: column wrap; */
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0 30px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url("https://res.cloudinary.com/laviedegeorge/image/upload/v1567198187/startng/nairo_images/bg-image_vm4qql.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+padding: 0;
+font-family: geometria;
+}
+header nav {
+  margin-top: 0;
+  display: flex;
+ /*  flex-flow: row nowrap; */
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 2em;
+  font-size: 17px;
+}
+header nav ul{
+  display: flex;
+  list-style-type: none;
+}
+.portfolio{
+  width: 100%;
+  background-color: #ccc;
 }
 
-.main-container {
-}
+
+
+
+/* body {
+    background-color: rgb(146, 145, 143);
+    margin: 0;  
+    padding: 0;  
+} */
+
+/* .main-container {
+} */
 
 h1 { text-align: center; }
 h2 {
@@ -132,9 +180,9 @@ div.gallery {
 @media(max-width: 800px) {
   #nav-items { display: none;}
   .icon{ display: block; }
-  .main-container {
+  /* .main-container {
 
-  }
+  } */
   .row { display: block; }
 
   h2,p {
