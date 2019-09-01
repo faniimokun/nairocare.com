@@ -358,8 +358,9 @@ footer{
 
 @media(max-width: 500px) {
   #nav-items { 
-    display: block;
-    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    flex-flow: column wrap;
+    background: rgba(17, 16, 16, 0.8);
     color: white;
     position: absolute;
     top: 0;
@@ -368,6 +369,17 @@ footer{
     left: 0;
     text-align: center;
   }
+ #nav-items li{
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: flex;
+ }
+ #nav-items li a{
+   margin: auto;
+   font-size: 30px;
+   font-weight: bold;
+ }
   .icon{ display: block; }
   .first-div { margin: auto; }
   .donate-btn { background-color: darkgreen; border:none;}
