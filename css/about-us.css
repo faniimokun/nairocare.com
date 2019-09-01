@@ -20,23 +20,29 @@
     background: url('../Donate.png') no-repeat;
     background-size: cover;
   }
-  /* header nav {
+  header nav {
     margin-top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background:transparent; 
   }
-  header nav ul li a {
+  .icon {
+    display: none;
+    color:#FFA401;
+  }
+  
+  #nav-items {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  
+  #nav-items a {
     text-decoration: none;
     color: #fff;
     margin-right: 2em;
     font-size: 17px;
   }
-  header nav ul{
-    display: flex;
-    list-style-type: none;
-  } */
 /* ============== Add next Section styles here =================*/
 
 /* ABOUT US PAGE DESIGN HERE */
@@ -262,3 +268,47 @@
 
 
 /* ABOUT US PAGE DESIGN ENDS HERE */
+
+/* Navigation css starts here */
+
+@media(max-width: 500px) {
+    #nav-items { 
+      display: none;
+      flex-flow: column wrap;
+      background: rgba(17, 16, 16, 0.8);
+      color: white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      text-align: center;
+      transition: 300ms ease-in-out all;
+    }
+   #nav-items li{
+     margin: auto;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     display: flex;
+   }
+  
+  i.fa-times{
+    font-size: 100px;
+    margin-top: 20px;
+    align-self: center;
+    margin-left: 30px;
+   }
+   #nav-items li a{
+     margin: auto;
+     font-size: 30px;
+     font-weight: bold;
+     padding: 10px
+   }
+    .icon{ display: block; }
+    .first-div { margin: auto; }
+    .donate-btn { background-color: darkgreen; border:none;}
+    .get-involved-btn { display: none; vertical-align: middle;}
+  } 
+  
+  /* Navigation css Ends here */
+  
