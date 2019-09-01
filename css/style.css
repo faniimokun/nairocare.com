@@ -108,10 +108,10 @@ ul{
   .first-section p {
     font-size: 20px;
   }
-  #nav-items {
+  /* #nav-items {
     display: none;
-  }
-  .icon { display: block; }
+  } */
+  /* .icon { display: block; } */
   .first-div {
     margin: auto;
   }
