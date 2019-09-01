@@ -96,6 +96,48 @@
     z-index: 1000;
 }
 
+
+
+.stand-out{
+    background: #E5E5E5;
+    display: flex;
+    padding: 30px;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+.stand-out h1.header-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+.stand-out img, .fast img, .care img{
+    width: 100px;
+    text-align: center;
+}
+.stand-out h2{
+    text-align: center;
+}
+.stand-out p{
+    text-align: center;
+}
+
+
+
+
+
+.fast{
+    background: white;
+}
+.care{
+    background: #E5E5E5;
+}
+.team{
+    background: white;
+}
+
 .rating{
     width: 100%;
     min-height: 400px;
