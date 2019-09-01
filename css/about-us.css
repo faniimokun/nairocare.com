@@ -156,16 +156,25 @@
     background: white;
     padding: 30px;
 }
-.team section{
+.team section img{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background: red;
+    margin: auto;
 }
 .team section.team-lead{
     margin: auto;
 }
+.team .text-color{
+    color: #014127;
+}
+.team .a-center{
+    
+    text-align: center;
+}
 .team button{
+    margin-top: 30px;
     background: #014127;
     padding: 1em 2em;
     color: #FFA401;
