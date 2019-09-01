@@ -93,7 +93,6 @@ ul{
   background-color: orange;
   color: #fff !important;
 }
-
 .get-involved-btn {
   background-color: transparent;
 }
@@ -362,7 +361,7 @@ footer{
   .first-div { margin: auto; }
   .donate-btn { background-color: darkgreen; border:none;}
   .get-involved-btn { display: none; vertical-align: middle;}
-}
+} 
 
 @media(max-width: 320px) {
   body{
