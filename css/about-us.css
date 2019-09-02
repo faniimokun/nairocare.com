@@ -18,7 +18,9 @@
     padding: 0;
     font-family: geometria;
     /* background: url('../Donate.png') no-repeat; */
-    background-size: cover;
+    background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('https://res.cloudinary.com/laviedegeorge/image/upload/v1567198190/startng/nairo_images/annie_ngbfx1.png') no-repeat;
+    background-size: contain;
+    
   }
   header nav {
     margin-top: 0;
@@ -26,7 +28,7 @@
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    background: black;
+    background:transparent;
   }
   
   .icon {
@@ -52,8 +54,7 @@
 /* ABOUT US PAGE DESIGN HERE */
 .about-us{
     width: 100%;
-    min-height: 90vh;
-    background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('../Donate.png') no-repeat center center;    
+    min-height: 90vh;    
     background-position: 80% 80%;
     /* display: flex; */
     flex-direction: column;
@@ -72,7 +73,7 @@
 }
 
 .about-us section.section-info{
-    width: 400px;
+    width: 600px;
     height: auto;
     text-rendering: optimizeSpeed;
     background: rgba(255, 255, 255, .5);
