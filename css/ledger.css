@@ -42,22 +42,18 @@ header nav {
     left: 30%;
     z-index: 50;
     width: 30%;
-    height: 50%;
     overflow: auto;
     background-color: transparent;
     text-align: center;
+    top: 20%;
 }
 
 .view-modal-content {
     text-align: left;
     display: inline-block;
     background-color: rgb(35, 145, 114);
-    margin: 5px;
-    padding: auto;
-    border: 1px solid transparent;
+    padding: 0 2% 0 7%;
     border-radius: 5px;
-    width: 90%;
-    height:90%;
     line-height: 2;
 
 }
@@ -72,14 +68,16 @@ header nav {
 }
 #donor-name, #amount-donated, #donation-date{
     color: rgb(58, 59, 59);
-    font-size: 15px
+    font-size: 1.1em;
+    margin-left: 2%;
 }
 
 #close {
     color: black;;
     float: right;
-    font-size: 18px;
+    font-size: 1.4em;
     font-weight: bold;
+    margin-right: 0;
 }
 
 #close:hover,
@@ -96,15 +94,17 @@ header nav {
     visibility: hidden;
 }
 
+header {
+  padding-bottom: 50px;
+}
 
 #ledger {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-left:30px;
-    padding-right:30px;
+    padding-left:5%;
+    padding-right:5%;
     flex-wrap: wrap;
 }
 
@@ -116,7 +116,6 @@ header nav {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;  
-    height: 720px;
     margin-bottom:15px;
     align-content: center;
     justify-content: center;
@@ -127,7 +126,6 @@ header nav {
 .ledger-menu-button {
     
     background-color:rgb(187, 243, 227);
-    border: 1px solid white;
     border-radius: 10px;
     padding: 7px 27%;
 }
@@ -135,7 +133,7 @@ header nav {
 .ledger-menu-button>a{
     text-decoration: none;
     color: rgb(35, 145, 114);
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: bold;
     line-height: 1.5;  
 
@@ -148,28 +146,19 @@ header nav {
 
 .menu-button-div{
     width:80%;
-    background-color: white;
     border-radius: 10px;
     padding: 1.5px;
     margin: 40px auto;
 }
 
 
-
-
-
-
 .ledger-amount {
     display: flex;
     flex-direction: column;
     flex:wrap;
-    position: relative;
     width: 75%;
-    padding: 20px;
-    padding-bottom: 110px;
-    height:600px;
-    margin-left:20px;
-    margin-right: -20px;
+    padding: 20px 1%;
+    margin-left: 2%;
     margin-bottom: 10px;
     border-radius: 20px;
     background: linear-gradient(to bottom, rgb(245, 245, 245) , transparent 100%)
@@ -179,32 +168,26 @@ header nav {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    padding:5px;
-    margin: 5%;
-    margin-top:10%;
+    justify-content: space-evenly;
+    margin: 0 5%;
 }
 
 .ledger-total-amount{
     color: rgb(35, 145, 114);
-    padding:5px 50px;
-    border-radius: 50px;
-    line-height: 0.3;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
+    margin-right: 1%;
 }
 
 
 
 .ledger-table{
     background-color: white;
-    padding: 7px;
     border-radius: 7px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    padding: 20px 0;
 }
 
 .td-details{
@@ -212,25 +195,29 @@ header nav {
 }
 
 .td-name{
-    font-size:18px;
+    font-size:1em;
 }
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;  
+    width: 100%; 
+    margin-bottom: 50px; 
 }
 
 td,
 th {
     border: 1px solid transparent;
     text-align: center;
-    padding: 8px;
+    padding: 8px 2%;
+}
+tr td button {
+  font-size: .9em;
 }
 
 th{
     color: rgb(35, 145, 114);
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 tr:nth-child(odd) {
@@ -244,24 +231,24 @@ tr:nth-child(1){
 .ledger-table-heading{
     color: gold;
     font-weight: bolder;
-    font-size:30px;
+    font-size:1.5em;
     width:70%;
-    display: inline-block;
+    padding: 10px 10%; 
 }
 
 
 [view-button]{
     color: white;
     background-color: rgb(35, 145, 114);
-    padding: 8% 15%;
-    border-radius: 100px;
+    padding: 2% 3%;
+    border-radius: 40px;
     border: 1px solid transparent;
 }
 
 [view-button]>a{
 text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 75%;
+    font-size: .8em;
     font-weight: bold;
     line-height: 1.5;
 }
@@ -276,5 +263,67 @@ text-decoration: none;
 }
 [view-more] > a{
     font-size: 100%;
-    Padding: 0%;
+}
+
+
+@media screen and (max-width: 1204px) {
+  .ledger-menu {
+    display: inline-block;
+    margin-bottom:15px;
+    width: 70%;
+  }
+
+  .ledger-menu h2.ledger-table-heading{
+    text-align: center;
+    font-size:1.5em;
+    width:80%;
+    
+  }
+}
+@media screen and (max-width: 600px) {
+
+  .ledger-table{
+    padding: 10px 4%;
+}
+
+  .ledger-amount {
+    width: 98%;
+    padding: 20px 1%;
+    margin-left:2%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(245, 245, 245) , transparent 100%)
+  }
+
+  .ledger-menu {
+    display: block;
+    margin-bottom:15px;
+    width: 98%;
+  }
+
+  .ledger-menu h2.ledger-table-heading{
+    font-weight: bolder;
+    text-align: center;
+    margin: 10px auto;
+    font-size:1.5em;
+    width:50%;
+  }
+
+  .td-name, .td-amount, .td-date{
+    font-size:.7em;
+  }
+
+  th{
+    font-size: .8em;
+  }
+  tr td button {
+    font-size: .6em;
+  }
+
+  .ledger-view-modal {
+    left: 10%;
+    width: 70%;
+    top: 90%;
+}
+
 }
