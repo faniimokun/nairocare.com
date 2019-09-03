@@ -112,7 +112,7 @@ header nav ul {
 h1 {
   text-align: center;
   font-size: 4rem;
-  color: #014127;
+  color: orange;
   font-family: "Playfair Display", serif;
   font-weight: bolder;
 }
@@ -180,7 +180,7 @@ h1 {
   font-weight: bold;
 }
 
-.form-style div input[type="submit"] {
+.form-style div button[type="submit"] {
   -moz-box-shadow: inset 0px 1px 0px 0px #ffbb01;
   -webkit-box-shadow: inset 0px 1px 0px 0px #ffbb01;
   box-shadow: inset 0px 1px 0px 0px #ffc001;
@@ -194,7 +194,7 @@ h1 {
   float: right;
 }
 
-.form-style div input[type="submit"]:hover {
+.form-style div button[type="submit"]:hover {
   background: linear-gradient(to bottom, #ffbb01 5%, #ff8d01 100%);
   background-color: #ff8d01;
 }
