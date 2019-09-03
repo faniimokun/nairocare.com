@@ -31,7 +31,7 @@ for (var i = 0; i < viewButtons.length; i++) {
         viewModal.style.display = "block";
     }
     viewButtons[4].onclick = function () {
-        document.getElementById("donor-name").innerHTML = "";
+        document.getElementById("donor-name").innerHTML = "Chisom Okekenwa";
         document.getElementById("amount-donated").innerHTML = "₦120,000.00";
         document.getElementById("donation-date").innerHTML = "Thursday, 14th August 2019 5:30:27PM";
         viewModal.style.display = "block";
@@ -44,10 +44,10 @@ var closeModal = document.getElementById("close");
 closeModal.addEventListener("click", () => {
     viewModal.style.display = "none";
 })
+console.log("here!")
 
-
-window.onclick = function(e){
-    if (e.target == modal){
-        modal.style.display = "none";
-    }
-}
+// window.onclick = function(e){
+//     if (e.target == modal){
+//         modal.style.display = "none";
+//     }
+// }
