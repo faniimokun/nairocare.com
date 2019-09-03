@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About Us</title>
     <link rel="stylesheet" href="../css/about-us.css">
-    <!-- <link rel="stylesheet" href=""> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -22,17 +21,17 @@
                 alt="Nairocare-logo" width="100px" height="100px">
             <div class="mobile">
                 <ul id="nav-items">
-                    <center><a href="javascript:void(0);" class="icon" onclick="displayNavItems()">
-                            <i class="fa fa-times"></i>
-                    </center>
+                    <a href="javascript:void(0);" 
+                        class="icon"      
+                        onclick="displayNavItems()">
+                        <i class="fa fa-times"></i>
                     </a>
-                    <li><a href="../index.html" id="active">Home</a></li>
-                    <li><a href="ledger.html">Ledger</a></li>
-                    <li><a href="volunteer.html">Get Involved</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="team.html">The Team</a></li>
-                    <li><a href="talk-to-us.html">Talk To Us</a></li>
-
+                    <li><a href="index.html" id="active">Home</a></li>
+                    <li><a href="html/ledger.html">Ledger</a></li>
+                    <li><a href="html/volunteer.html">Get Involved</a></li>
+                    <li class="active"><a href="html/about-us.html">About Us</a></li>
+                    <li><a href="html/team.html">The Team</a></li>
+                    <li><a href="html/talk-to-us.html">Talk To Us</a></li>
                 </ul>
             </div>
 
@@ -41,7 +40,6 @@
             </a>
         </nav>
     </header>
-
 
 
     <!-- End of component -->
@@ -156,46 +154,16 @@
         </center>
     </div>
 
-    <script type="text/javascript">
-        function displayNavItems() {
-            var navToggle = document.getElementById("nav-items");
-            if (navToggle.style.display === "block") {
-                navToggle.style.display = "none";
-            } else {
-                navToggle.style.display = "block";
-            }
-        };
-    </script>
-    <!-- <div class="rating">
-        <section>
-            <div class="circle">
-                <span>75%</span>
-            </div>
-            <span data-text>Hardwork</span>
-        </section>
-            <section>
-        <div class="circle">
-           <span> 100% </span>
-        </div>
-        <span data-text>Purelove</span>
-    </section>
-        <section>
-            <div class="circle">
-                <span> 75% </span>
-            </div>
-            <span data-text>Hardwork</span>
-        </section>
-    </div>
-    <div class="donate">
-        <h1>Help us so we can help others</h1>
-        <div class="btn">
-            <a href="../nairocare.com/index.html#kc_dontate"><button>Donate Now</button></a>
-        </div>
-
-    </div> -->
-    <!-- About us code ends here -->
-
 
 </body>
-
+<script type="text/javascript">
+    function displayNavItems() {
+        var navToggle = document.getElementById("nav-items");
+        if (navToggle.style.display === "block") {
+            navToggle.style.display = "none";
+        } else {
+            navToggle.style.display = "block";
+        }
+    };
+</script>
 </html>

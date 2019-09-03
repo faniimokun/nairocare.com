@@ -8,11 +8,11 @@
     padding: 0;
   }
 
-  @font-face {
+ /*  @font-face {
     font-family: geometria;
     src: url('../css/Geometria/Geometria-Light.ttf') format('truetype');
   
-  }
+  } */
   body {
     margin: 0;
     padding: 0;
@@ -21,6 +21,9 @@
     background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('https://res.cloudinary.com/laviedegeorge/image/upload/v1567198190/startng/nairo_images/annie_ngbfx1.png') no-repeat;
     background-size: contain;
     
+  }
+  .active{
+      color: #FFA401;
   }
   header nav {
     margin-top: 0;
@@ -280,7 +283,7 @@
     #nav-items { 
       display: none;
       flex-flow: column wrap;
-      background: rgba(17, 16, 16, 0.8);
+      background: rgba(17, 16, 16, 0.9);
       color: white;
       position: absolute;
       top: 0;
@@ -288,7 +291,7 @@
       right: 0;
       left: 0;
       text-align: center;
-      transition: 300ms ease-in-out all;
+      transition: 500ms ease-in-out all;
     }
    #nav-items li{
      margin: auto;
@@ -302,18 +305,21 @@
     margin-top: 20px;
     align-self: center;
     margin-left: 30px;
+    opacity: 0.5;
+    mix-blend-mode: hard-light;
    }
    #nav-items li a{
-     margin: auto;
-     font-size: 30px;
-     font-weight: bold;
-     padding: 10px
+    margin: auto;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 10px;
    }
     .icon{ display: block; }
     .first-div { margin: auto; }
     .donate-btn { background-color: darkgreen; border:none;}
     .get-involved-btn { display: none; vertical-align: middle;}
   } 
-  
   /* Navigation css Ends here */
   

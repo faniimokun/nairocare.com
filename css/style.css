@@ -50,6 +50,7 @@ ul{
 .icon {
   display: none;
   color:#FFA401;
+  font-size: 2rem;
 }
 
 #nav-items {
@@ -83,12 +84,13 @@ ul{
 
 .first-div button {
   border-radius: 18px;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   width: 200px;
   padding: 10px 5px;
   color: orange;
   font-size: 17px;
   margin-right: 15px;
+  border: none;
 }
 .donate-btn {
   background-color: orange;
@@ -96,6 +98,7 @@ ul{
 }
 .get-involved-btn {
   background-color: transparent;
+  border: 1px solid #FFA401;
 }
 
 #active {
@@ -359,16 +362,16 @@ footer{
 @media screen and (max-width: 650px){
   .first-section {
     width: auto; 
-/*     border: 2px solid red; */
+
   }
 
 /* Navigation css starts here */
 
 @media(max-width: 500px) {
-  #nav-items { 
+  #nav-items {
     display: none;
     flex-flow: column wrap;
-    background: rgba(17, 16, 16, 0.8);
+    background: rgba(17, 16, 16, 0.9);
     color: white;
     position: absolute;
     top: 0;
@@ -376,7 +379,7 @@ footer{
     right: 0;
     left: 0;
     text-align: center;
-    transition: 300ms ease-in-out all;
+    transition: 500ms ease-in-out all;
   }
  #nav-items li{
    margin: auto;
@@ -390,12 +393,16 @@ i.fa-times{
   margin-top: 20px;
   align-self: center;
   margin-left: 30px;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
  }
  #nav-items li a{
-   margin: auto;
-   font-size: 30px;
-   font-weight: bold;
-   padding: 10px
+  margin: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 10px;
  }
   .icon{ display: block; }
   .first-div { margin: auto; }
