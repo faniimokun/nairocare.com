@@ -119,8 +119,11 @@ header nav {
   color: #fff;
   margin-right: 2em;
   font-size: 17px;
+  transition: ease-in-out .5s;
 }
-
+#nav-items a:hover{
+  color: #FFA401;
+}
 h1 {
   font-size: 4rem;
   text-indent: 1rem;

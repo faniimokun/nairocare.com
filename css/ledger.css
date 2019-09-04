@@ -38,8 +38,14 @@ header nav {
 #nav-items {
   display: flex;
   list-style-type: none;
+  
 }
-
+#nav-items a{
+  transition: ease-in-out .5s;
+}
+#nav-items a:hover{
+  color: #FFA401;
+}
 .active{
   color: #FFA401 !important;
 }

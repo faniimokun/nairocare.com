@@ -51,6 +51,10 @@
     color: #fff;
     margin-right: 2em;
     font-size: 17px;
+    transition: ease-in-out .5s;
+  }
+  #nav-items a:hover{
+    color: #FFA401;
   }
 /* ============== Add next Section styles here =================*/
 

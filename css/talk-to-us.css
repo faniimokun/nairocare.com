@@ -135,9 +135,12 @@ header nav {
     color: #fff;
     margin-right: 2em;
     font-size: 17px;
+    transition: ease-in-out .5s;
   }
   
-
+  #nav-items a:hover{
+    color: #FFA401;
+  }
 h1 {
     text-align: center;
     font-size: 4rem;
