@@ -324,11 +324,14 @@ footer{
 .sub_cont input {
   height: 40px;
   border: none;
+  padding-left: 20px;
 }
 .sub_cont button {
   border: none;
   color: #fff;
   background-color: #FFA401;
+  cursor: pointer;
+
 }
 .socials{
   width: 100%;
@@ -347,6 +350,21 @@ footer{
   justify-content: space-evenly;
   font-weight: bold;
   padding-right: 25px;
+}
+footer .footer-align{
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+footer .footer-align p{
+  width: 400px;
+  /*background: red;*/
+  padding: 10px;
+}
+footer .footer-align .sub_cont{
+  width: 400px;
 }
 
 /* FOOTER ENDS HERE */

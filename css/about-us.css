@@ -18,7 +18,9 @@
     padding: 0;
     font-family: geometria;
     /* background: url('../Donate.png') no-repeat; */
-    background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('https://res.cloudinary.com/laviedegeorge/image/upload/v1567198190/startng/nairo_images/annie_ngbfx1.png') no-repeat;
+    /*background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('https://res.cloudinary.com/laviedegeorge/image/upload/v1567198190/startng/nairo_images/annie_ngbfx1.png') no-repeat;*/
+    /*background: #C9E8F6;*/
+    color: black;
     background-size: contain;
     
   }
@@ -31,7 +33,7 @@
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    background:transparent;
+    background: #00BCBD;
   }
   
   .icon {
@@ -51,41 +53,70 @@
     color: #fff;
     margin-right: 2em;
     font-size: 17px;
+    font-weight: bold;
   }
 /* ============== Add next Section styles here =================*/
 
 /* ABOUT US PAGE DESIGN HERE */
 .about-us{
     width: 100%;
-    min-height: 90vh;    
+    min-height: 90vh;   
+    background-color: #C9E8F6; 
     background-position: 80% 80%;
-    /* display: flex; */
-    flex-direction: column;
+    display: flex; 
+    flex-flow: row wrap;
     padding: 20px;
 }
 .about-us h1.d-black{
     font-weight: 900;
     font-size: 2.5em;
     font-family: 'Fira sans', sans-serif;
-    color: #FFA401;
+    /*color: #FFA401;*/
+    color: #00BCBD;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 100px;
     
      
 }
-
+.top-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
 .about-us section.section-info{
-    width: 600px;
+    width: 500px;
     height: auto;
     text-rendering: optimizeSpeed;
-    background: rgba(255, 255, 255, .5);
     padding: 20px;
     border-radius: 10px;
     margin-left: 20px;
 }
+
+@media (max-width: 500px) {
+    .about-us{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .about-us h1.d-black{
+        font-size: 2em;
+        
+        padding-left: 25px;
+    }
+    .about-us section.section-info{
+        width: 100%;
+    }
+}
+section.img img{
+    width: 100%;
+    background: yellow;
+}
 .about-us section.section-info p{
-    color: white;
+    color: #000;
     font-family: 'geometria', sans-serif;
     text-rendering: geometricPrecision;
     text-align: justify;
@@ -113,7 +144,7 @@
 
 
 .stand-out{
-    background: #E5E5E5;
+    background: #d4dee4;
     padding: 30px;
     align-content: center;
     justify-items: center;
@@ -273,6 +304,10 @@
     font-weight: bold;
     box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
 }
+button a{
+    color: #fff;
+    text-decoration: none;
+}
 
 
 /* ABOUT US PAGE DESIGN ENDS HERE */
@@ -323,6 +358,7 @@
     .first-div { margin: auto; }
     .donate-btn { background-color: darkgreen; border:none;}
     .get-involved-btn { display: none; vertical-align: middle;}
+
   } 
   /* Navigation css Ends here */
   
