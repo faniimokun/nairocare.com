@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nairocare | Home</title>
+    <meta name="description" content="Join hands with Nairocare to save the lives of Internally Displaced Persons all over Nigeria. Donate and save a life.">
+    <title>Nairocare | Help Someone Today</title>
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.2.95/css/materialdesignicons.min.css">
     <link rel='shortcut icon'
         href='https://res.cloudinary.com/laviedegeorge/image/upload/v1567198184/startng/nairo_images/nairocare-main-trans_szcp2z.png'
@@ -26,7 +27,7 @@
         <header>
             <nav>
                 <img src="https://res.cloudinary.com/laviedegeorge/image/upload/v1567198184/startng/nairo_images/nairocare-main-trans_szcp2z.png"
-                    alt="Nairocare-logo" width="100px" height="100px">
+                    alt="Nairocare-logo" title="Nairocare Logo" width="100px" height="100px">
                 <div class="mobile">
                     <ul id="nav-items">
                         <a href="javascript:void(0);" 
@@ -72,7 +73,7 @@
         <div class="background">
             <div class="img_div">
                 <img
-                    src="https://res.cloudinary.com/modupe/image/upload/v1567156677/Nairocare/2915A05C-982F-4C79-8862-7466A4E1FD96_gpugmw.jpg" alt="background-image" />
+                    src="https://res.cloudinary.com/modupe/image/upload/v1567156677/Nairocare/2915A05C-982F-4C79-8862-7466A4E1FD96_gpugmw.jpg" alt="children at IDP camps" title="children at IDP camps" />
             </div>
             <div class="head">
                 <p class="top">Welcome to our</p>
@@ -134,12 +135,12 @@
         <div class="num_donors">
             <div class="kc_num-helped center">
                 <img src="https://res.cloudinary.com/laviedegeorge/image/upload/v1567198183/startng/nairo_images/multiple-users-silhouette_ctyqkz.png"
-                    alt="beneficiary-logo">
-                <p class="num">100 <br> <span>People helped</span> </p>
+                    alt="people’s silhouette" >
+                <p class="num">100 <br> <span>Beneficiaries</span> </p>
             </div>
             <div class="donors center">
                 <img src="https://res.cloudinary.com/laviedegeorge/image/upload/v1567198184/startng/nairo_images/team_2_dzvjzj.png"
-                    alt="donor-logo">
+                    alt="donor-silhouette">
                 <p class="num">100 <br><span> Donors</span></p>
             </div>
         </div>
@@ -167,13 +168,16 @@
         <form action="#" method="post">
             <label for="fullName" class="b">Full Name:</label>
             <input type="text" class="input" id="fullName" required>
-            <label for="email" class="b">Email:</label>
+            <div class="red"></div>
+            <label for="email" class="b" >Email:</label>
             <input type="email" class="input" name="email" id="email" required>
+            <div class="red"></div>
             <div class="amount">
                 <p>Choose your donation amount:</p>
-                <input id="amount" name="amount" type="radio" value="1000">N1000 <br>
-                <input id="amount" name="amount" type="radio" value="10000">N10000 <br>
-                <input id="amount" name="amount" type="radio" value="100000">N100000 <br>
+                <input id="amount" name="amount" type="radio" value="1000" class="radio">N1000 <br>
+                <input id="amount" name="amount" type="radio" value="10000" class="radio">N10000 <br>
+                <input id="amount" name="amount" type="radio" value="100000" class="radio">N100000 <br>
+                <div class="red" id="red"></div>
             </div>
             <div class="other-amt">
                 <label for="otherAmt" class="b">Other Amount</label>
@@ -184,7 +188,7 @@
                 <div class="secure">
                     <p>secured by <span>rave</span></p>
                     <img src="https://res.cloudinary.com/laviedegeorge/image/upload/v1567288328/startng/nairo_images/Rave_Master_Visa_Verve_vh6gw8.png"
-                        alt="payment-merchant-logo">
+                        alt="payment-partners">
                 </div>
             </div>
 
@@ -198,9 +202,10 @@
             <p>Get the lastest news about our upcoming events</p>
             <hr>
             <div class="sub_cont">
-                <input type="email" name="subcribe" id="subcribe">
+                <input type="email" name="subscribe" id="subscribe">
                 <button type="submit">subscribe</button>
             </div>
+            <div class="red suberror"></div>
             <hr>
             <div class="socials">
                 <i class="mdi mdi-facebook"></i>
@@ -242,5 +247,5 @@
         }
     };
 </script>
-
+<script src="./js/main.js"></script>
 </html>

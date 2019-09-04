@@ -13,6 +13,10 @@
   src: url('../css/Geometria/Geometria-Light.ttf') format('truetype');
 
 }
+*{
+  outline: none;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -133,7 +137,11 @@ ul{
 /*   .first-section { border: 2px solid blue; } */
   .first-div { margin: auto;}
   .donate-btn { background-color: darkgreen; border:none;}
-  .get-involved-btn { display: none; vertical-align: middle;}
+  .get-involved-btn { 
+    display: inline-block;
+    width: 40% !important;
+    font-size: 10px !important;
+    vertical-align: middle;}
 }
 /* Homepage styling ends here */
 
@@ -175,6 +183,7 @@ color: #22352B;
   height: 2px;
   background-color: #FFA401;
   border: none;
+  margin-bottom: 10px;
 }
 .under2{
   width: 100px;
@@ -192,6 +201,11 @@ color: #22352B;
   border-radius: 20px;
   margin-top: 15px;
   border: none;
+  transition: ease-in-out .5s;
+}
+.click:hover{
+  background-color: #FFA401;
+  transform: scale(1.1);
 }
 
 /* GET INVOVLED ENDS HERE */
@@ -273,7 +287,10 @@ form{
   border: none;
   border-bottom: 1px solid #fff;
   color: #fff;
-  
+  transition: ease-in-out .5s;
+}
+.input:hover, .input:focus{
+  border-bottom: 2px solid #FFA401;
 }
 
 .btn_secure{
@@ -288,6 +305,10 @@ form{
   border: none;
   border-radius: 30px;
   margin-top: 15px;
+  transition: ease-in-out .5s;
+}
+.btn:hover{
+  transform: scale(1.1);
 }
 .secure{
   text-align: center;
@@ -301,6 +322,13 @@ form{
 }
 .secure img{
   width: 80%;
+}
+.red{
+  display: none;
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 0%;
 }
 /* DONATE ENDS HERE */
 
@@ -331,6 +359,7 @@ footer{
 .sub_cont input {
   height: 40px;
   border: none;
+  text-indent: 10px;
 }
 .sub_cont button {
   border: none;
@@ -413,8 +442,16 @@ i.fa-times{
  }
   .icon{ display: block; }
   .first-div { margin: auto; }
-  .donate-btn { background-color: darkgreen; border:none;}
-  .get-involved-btn { display: none; vertical-align: middle;}
+  .donate-btn { 
+    background-color: darkgreen;
+     border:none;
+     width: 40% !important;
+    margin-bottom: 5px;
+    font-size: 12px !important;
+    }
+  .get-involved-btn { 
+    vertical-align: middle;
+  }
 } 
 
 /* Navigation css Ends here */
@@ -434,6 +471,32 @@ i.fa-times{
   }
   .num_donors{
     display: block;
+  }
+  .write_up{
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align:center;
+
+  }
+  .center{
+    margin-right: 0%;
+  }
+  .center p{
+    font-size:15px;
+    margin-bottom: 2px;
+  }
+  .center img{
+    width: 70px;
+    height: 70px;
+    margin-right: 0%;
+  }
+  h3{
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 5px;
+  }
+  footer{
+    padding: 10px;
   }
 }
 }
