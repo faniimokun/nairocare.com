@@ -3,6 +3,10 @@
   src: url('../css/Geometria/Geometria-Light.ttf') format('truetype');
 
 }
+*{
+  outline: none;
+  box-sizing: border-box;
+}
 body{
   box-sizing: border-box;
   height: 100vh;
@@ -25,6 +29,9 @@ ul{
   padding: 0%;
   list-style-type: none;
 }
+
+/* HEADER ................. */
+
 header nav {
   margin-top: 0;
   display: flex;
@@ -59,51 +66,107 @@ header nav {
   width: 100%;
   background-color: #ccc;
 }
-
-
-
-
-/* body {
-    background-color: rgb(146, 145, 143);
-    margin: 0;  
-    padding: 0;  
-} */
-
-/* .main-container {
-} */
-
-h1 { text-align: center; }
-h2 {
-    color: #FFA401;
-  margin-left: 80px;
+#active {
+  color: orange !important;
 }
 
-p  {
-  padding-top: 5px;
+
+/* BODY................. */
+.main{
+  width:100%;
+  background-color: #ccc;
 }
-div.gallery {
-  background-color: white;
-    /*margin: 5px 150px;*/
-    border: 1px solid #ccc;
-    border-radius: 5px; 
-    /*float: left;*/
-    /*width: 180px;*/
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-    filter: grayscale(100%);
-  }
-  
-  div.desc {
-    padding: 3px;
-    text-align: center;
-  }
+.white{
+  width: 100%;
+  padding: .3rem 0px;
+  background-color: #ccc;
+}
+.h1 {
+  font-weight: bold;
+  color: #014127;
+  text-indent: 15px;
+  margin: 1rem 0px 0px 0px;
+}
+.trans{
+  width: 100%;
+  height: 70px;
+  background: transparent;
+}
+.yellow_hr{
+  text-align: left;
+  width: 100px;
+  height: 2px;
+  background-color: #FFA401;
+  border: none;
+}
+.cont{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 5%;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.team_member{
+  width:100%;
+  /* height: 370px; */
+  border: 1px solid #FFA401;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #333;
+}
+.team_member img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px; 
+  max-height:180px;
+}
+.name {
+  text-align: center;
+  font-weight: bold;
+  margin: 0px ;
+}
+.socials{
+  margin: 0px;
+}
+.mre_details{
+  font-size: 12px;
+  color:#fff;
+  background-color: #FFA401;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+.discrip{
+  padding: 5px;
+  margin: 0px;
+  font-size: 15px;
+  text-align: center;
+}
+.position{
+  font-weight: bold;
+
+}
+.v_more{
+  width: 100px;
+  height: 35px;
+  font-size: 15px;
+  background-color: #014127d6;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  margin-left: 10px;
+  transition: ease-in-out .5s;
+  margin-bottom: 10px;
+}
+.v_more:hover{
+  background-color: #014127;
+  transform: scale(1.05);
+}
+
+
 
   .fa {
     padding: 5px;
@@ -135,70 +198,10 @@ div.gallery {
   color: white;
 }
 
-  .column-5-first {
-    width: 15%;
-    padding: 10px;
-    margin-right: 10px;
-  }
-  
-  .column-5-middle {
-    width: 15%;
-    padding: 10px;
-    margin-right: 10px;
-  }
-  .row { display: flex; flex-wrap: nowrap;justify-content: center;}
- 
-  .container {
-      width: 100%;
-      /*padding-top: 30%;*/
-      /*border: 2px solid blue;*/
-      margin: auto;
-  }
-.container h1, .fe{
-  font-size: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.container2 {
-    width: 100%;
-    /*padding-top: 30%;*/
-    /*border: 2px solid red;*/
-    margin: auto;
-}
-
-/*    */
-
-.first-section header nav {
-  margin-top: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color:transparent;
-  /*position: fixed;*/
-}
-.icon {
-  display: none;
-  color: white;
-}
-
-#nav-items {
-  display: flex;
-  list-style-type: none;
-}
 
 
-#nav-items a {
-  text-decoration: none;
-  color: #fff;
-  margin-right: 2em;
-  font-size: 17px;
-}
+/* FOOTER............ */
 
-#active {
-  color: orange !important;
-}
 footer{
   background-color:#014127;
   color: #fff;
@@ -271,26 +274,8 @@ footer{
   }
 
 }
+/* MEDIA QUERIES.................... */
 
-@media(max-width: 500px) {
-  .row { display: block; }
-
-  h2,p {
-    text-align: center;
-    margin: auto;
-  }
-
-  .column-5-first {
-    width:80%;margin: auto;
-    display: block;
-  }
-  .column-5-middle {
-    width:80%;margin: auto;
-    display: block; 
-  }
-
-
-}
 @media(max-width: 500px) {
   .fa{
     margin-right: 10px;
@@ -338,5 +323,14 @@ i.fa-times{
   .get-involved-btn { display: none; vertical-align: middle;}
   footer{
     padding: 10px;
+  }
+  .cont{
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+  .team_member{
+    height: auto;
+    margin-bottom: 10px;
   }
 } 
