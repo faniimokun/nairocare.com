@@ -329,6 +329,7 @@ footer{
   border: none;
   color: #fff;
   background-color: #FFA401;
+  cursor: pointer;
 }
 .socials{
   width: 100%;
@@ -347,6 +348,9 @@ footer{
   justify-content: space-evenly;
   font-weight: bold;
   padding-right: 25px;
+}
+footer .footer-align{
+  display: flex;
 }
 
 /* FOOTER ENDS HERE */
