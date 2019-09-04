@@ -80,7 +80,8 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 .about-us section.section-info{
     width: 500px;
