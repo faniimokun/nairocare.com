@@ -67,7 +67,13 @@ caption {
     vertical-align: baseline;
     background: transparent;
 }
-
+img{
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
 body {
     background-repeat: no-repeat;
     background-position: center center;
@@ -87,7 +93,9 @@ body {
     padding: 0;
     font-family: geometria;
 }
-
+.active{
+    color: #ffc001 !important;
+  }
 .label {
     width: 600px;
     display: flex;
@@ -104,24 +112,31 @@ body {
 
 /* STYLING OF TAGS IN HEADER ELEMENT */
 
-nav {
+header nav {
     margin-top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-nav ul li a {
+  }
+  .icon {
+    display: none;
+    color:#FFA401;
+    font-size: 2rem;
+  }
+  
+  #nav-items {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  
+  #nav-items a {
     text-decoration: none;
     color: #fff;
     margin-right: 2em;
     font-size: 17px;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
+  }
+  
 
 h1 {
     text-align: center;
@@ -183,7 +198,7 @@ textarea {
 }
 
 
-}
+
 
 /* STYLING OF EVERYTHING INSIDE THE FORM CONTAINER */
 .form-style {
@@ -205,11 +220,11 @@ textarea {
     padding: 8px;
     outline: none;
     border: 1px solid #ffc001;
-    -webkit-transition: all 0.30s ease-in-out;
+    /* -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
     -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-}
+    -o-transition: all 0.30s ease-in-out;*/
+} 
 .form-style div .field-style:focus {
     box-shadow: 0 0 5px #ffc001;
     border: 1px solid #ffc001;
@@ -271,6 +286,7 @@ textarea {
     border-collapse: collapse;
 }
 
+
 /* FOR RESPONSIVENESS ON MOBILE */
 @media screen and (max-width: 600px) {
     .form-style div input.align-left {
@@ -291,3 +307,52 @@ textarea {
     }
 }
 /* 40 volunteer.html */
+@media(max-width: 500px) {
+    body{
+        background-color: #364D2E;
+    }
+    .fa{
+      margin-right: 10px;
+    }
+    #nav-items {
+      display: none;
+      flex-flow: column wrap;
+      background: rgba(17, 16, 16, 0.9);
+      color: white;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      text-align: center;
+      transition: 500ms ease-in-out all;
+      margin: 0px;
+    }
+   #nav-items li{
+     margin: auto;
+     margin-top: 0px;
+     margin-bottom: 20px;
+     display: flex;
+   }
+  
+  i.fa-times{
+    font-size: 100px;
+    margin-top: 0px;
+    align-self: center;
+    margin-left: 30px;
+    opacity: 0.5;
+    mix-blend-mode: hard-light;
+   }
+   #nav-items li a{
+    margin: auto;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 10px;
+   }
+    .icon{ display: block; }
+    .first-div { margin: auto; }
+    .donate-btn { background-color: darkgreen; border:none;}
+    .get-involved-btn { display: none; vertical-align: middle;}
+  } 

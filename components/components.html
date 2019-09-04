@@ -6,18 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>components</title>
     <link rel="stylesheet" href="/nairocare.com/components/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-        <header>
-                <nav>
-                    <img src="https://res.cloudinary.com/laviedegeorge/image/upload/v1567198184/startng/nairo_images/nairocare-main-trans_szcp2z.png" alt="Nairocare-logo" width="100px" height="100px">
-                    <ul>
-                        <li><a href="#" id="active">Home</a></li>
-                        <li><a href="">Get Involved</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Talk To Us</a></li>
-                    </ul>	
-                </nav>
-        </header>
+    <header>
+        <nav>
+            <img src="https://res.cloudinary.com/laviedegeorge/image/upload/v1567198184/startng/nairo_images/nairocare-main-trans_szcp2z.png"
+                alt="Nairocare-logo" width="100px" height="100px">
+            <div class="mobile">
+                <ul id="nav-items">
+                    <a href="javascript:void(0);" 
+                        class="icon"      
+                        onclick="displayNavItems()">
+                        <i class="fa fa-times"></i>
+                    </a>
+                    <li><a href="index.html" id="active">Home</a></li>
+                    <li><a href="html/ledger.html">Ledger</a></li>
+                    <li><a href="html/volunteer.html">Get Involved</a></li>
+                    <li><a href="html/about-us.html">About Us</a></li>
+                    <li><a href="html/team.html">The Team</a></li>
+                    <li><a href="html/talk-to-us.html">Talk To Us</a></li>
+                </ul>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="displayNavItems()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
 </body>
+<script type="text/javascript">
+    function displayNavItems() {
+        var navToggle = document.getElementById("nav-items");
+        if (navToggle.style.display === "block") {
+            navToggle.style.display = "none";
+        } else {
+            navToggle.style.display = "block";
+        }
+    };
+</script>
 </html>

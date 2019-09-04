@@ -1,3 +1,12 @@
+@font-face {
+  font-family: geometria;
+  src: url('../css/Geometria/Geometria-Light.ttf') format('truetype');
+
+} 
+*{
+  outline: none;
+  box-sizing: border-box;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -11,27 +20,35 @@ body {
   background-size: cover;
   font-family: geometria;
 }
-
+ul{padding: 0%}
 
 /* STYLING OF TAGS IN HEADER ELEMENT */
 header nav {
-    margin-top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0;
-  }
-  header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    margin-right: 2em;
-    font-size: 17px;
-  }
-  
-  header nav ul {
-    display: flex;
-    list-style-type: none;
-  }
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  display: none;
+  color:#FFA401;
+  font-size: 2rem;
+}
+
+#nav-items {
+  display: flex;
+  list-style-type: none;
+}
+
+.active{
+  color: #FFA401 !important;
+}
+#nav-items a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 2em;
+  font-size: 17px;
+}
 
   
   
@@ -40,12 +57,14 @@ header nav {
     display: none;
     position: absolute;
     left: 30%;
+    top: 20%;
     z-index: 50;
-    width: 30%;
+    width: 50%;
+    height: auto;
     overflow: auto;
     background-color: transparent;
     text-align: center;
-    top: 20%;
+    
 }
 
 .view-modal-content {
@@ -327,3 +346,51 @@ text-decoration: none;
 }
 
 }
+
+/* nav.... */
+@media(max-width: 500px) {
+  .fa{
+    margin-right: 10px;
+  }
+  #nav-items {
+    display: none;
+    flex-flow: column wrap;
+    background: rgba(17, 16, 16, 0.9);
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    transition: 500ms ease-in-out all;
+    margin: 0px;
+  }
+ #nav-items li{
+   margin: auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: flex;
+ }
+
+i.fa-times{
+  font-size: 100px;
+  margin-top: 20px;
+  align-self: center;
+  margin-left: 30px;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+ }
+ #nav-items li a{
+  margin: auto;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 10px;
+ }
+  .icon{ display: block; }
+  .first-div { margin: auto; }
+  .donate-btn { background-color: darkgreen; border:none;}
+  .get-involved-btn { display: none; vertical-align: middle;}
+} 
