@@ -60,7 +60,7 @@
     min-height: 90vh;   
     background-color: #C9E8F6; 
     background-position: 80% 80%;
-     display: flex; 
+    display: flex; 
     flex-flow: row wrap;
     padding: 20px;
 }
@@ -68,10 +68,11 @@
     font-weight: 900;
     font-size: 2.5em;
     font-family: 'Fira sans', sans-serif;
-    color: #FFA401;
+    /*color: #FFA401;*/
+    color: #014127;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 100px;
     
      
 }
@@ -96,7 +97,7 @@ section.img img{
     background: yellow;
 }
 .about-us section.section-info p{
-    color: white;
+    color: #000;
     font-family: 'geometria', sans-serif;
     text-rendering: geometricPrecision;
     text-align: justify;
@@ -124,7 +125,7 @@ section.img img{
 
 
 .stand-out{
-    background: #E5E5E5;
+    background: #d4dee4;
     padding: 30px;
     align-content: center;
     justify-items: center;
@@ -283,6 +284,10 @@ section.img img{
     cursor: pointer;
     font-weight: bold;
     box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
+}
+button a{
+    color: #fff;
+    text-decoration: none;
 }
 
 
