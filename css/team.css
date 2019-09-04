@@ -23,6 +23,7 @@ font-family: geometria;
 }
 ul{
   padding: 0%;
+  list-style-type: none;
 }
 header nav {
   margin-top: 0;
@@ -73,7 +74,7 @@ header nav {
 
 h1 { text-align: center; }
 h2 {
-    color: #fff;
+    color: #FFA401;
   margin-left: 80px;
 }
 
@@ -198,7 +199,56 @@ div.gallery {
 #active {
   color: orange !important;
 }
-
+footer{
+  background-color:#014127;
+  color: #fff;
+  padding: 30px;
+}
+.footer_cont{
+  text-align: center;
+}
+.footer_cont p{
+  font-weight: bold;
+}
+.footer_cont hr {
+  margin: 10px 0px;
+  border: none;
+  height: 1px;
+  background-color: #fff;
+}
+.sub_cont{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+.sub_cont input {
+  height: 40px;
+  border: none;
+  text-indent: 10px;
+}
+.sub_cont button {
+  border: none;
+  color: #fff;
+  background-color: #FFA401;
+}
+.socials{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials i {
+  font-size: 1.5em;
+  color: #FFA401;
+  margin-left: 15px;
+}
+.legal ul {
+  display:flex;
+  width: 100%;
+  justify-content: space-evenly;
+  font-weight: bold;
+  padding-right: 25px;
+}
 @media(max-width: 800px) {
   #nav-items { display: none;}
   .icon{ display: block; }
@@ -286,4 +336,7 @@ i.fa-times{
   .first-div { margin: auto; }
   .donate-btn { background-color: darkgreen; border:none;}
   .get-involved-btn { display: none; vertical-align: middle;}
+  footer{
+    padding: 10px;
+  }
 } 
