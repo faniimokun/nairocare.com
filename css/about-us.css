@@ -26,7 +26,7 @@
     font-family: geometria;
     /* background: url('../Donate.png') no-repeat; */
     background: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('https://res.cloudinary.com/laviedegeorge/image/upload/v1567198190/startng/nairo_images/annie_ngbfx1.png') no-repeat;
-   /*  background-size: contain; */
+    background-size: cover;
     
   }
   .active{
@@ -87,8 +87,7 @@
 }
 
 .about-us section.section-info{
-    width: 1500px;
-    height: 650px;
+    width: 95%;
     text-rendering: optimizeSpeed;
     background: rgba(255, 255, 255, .5);
     padding: 20px;
