@@ -9,7 +9,7 @@
 }
 body{
   box-sizing: border-box;
-  height: 100vh;
+  /* height: 100vh; */
   /* display: flex;
   flex-flow: column wrap; */
   width: 100%;
@@ -93,26 +93,33 @@ header nav {
   background: transparent;
 }
 .yellow_hr{
+  margin-left: 14px;
   text-align: left;
-  width: 100px;
+  width: 130px;
   height: 2px;
   background-color: #FFA401;
   border: none;
 }
+body .front-end-cont {
+  height: 1000px;
+}
 .cont{
   width: 100%;
   height: auto;
-  overflow: hidden;
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   grid-template-columns: 20% 20% 20% 20%;
   grid-gap: 5%;
   align-items: center;
-  justify-content: center;
-  padding: 25px;
+  justify-content: flex-start;
+  padding: 25px 0 25px 30px;
+  align-content: flex-start;
 }
 .team_member{
-  width:100%;
-  /* height: 370px; */
+  margin: 20px;
+  width:300px;
+  height: 450px;
   border: 1px solid #FFA401;
   border-radius: 10px;
   box-shadow: 0px 0px 5px #333;
@@ -121,7 +128,9 @@ header nav {
   object-fit: cover;
   width: 100%;
   border-radius: 10px 10px 0px 0px; 
-  max-height:180px;
+  max-height:250px;
+  min-height: 250px;
+  object-fit: cover;
 }
 .name {
   text-align: center;
@@ -149,7 +158,7 @@ header nav {
   font-weight: bold;
 
 }
-.v_more{
+/* .v_more{
   width: 100px;
   height: 35px;
   font-size: 15px;
@@ -160,11 +169,11 @@ header nav {
   margin-left: 10px;
   transition: ease-in-out .5s;
   margin-bottom: 10px;
-}
-.v_more:hover{
+} */
+/* .v_more:hover{
   background-color: #014127;
   transform: scale(1.05);
-}
+} */
 
 
 
@@ -328,9 +337,14 @@ i.fa-times{
     display: block;
     height: auto;
     width: 100%;
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+    align-content: flex-start;
+
   }
   .team_member{
     height: auto;
     margin-bottom: 10px;
+    margin: 30px auto;
   }
 } 
