@@ -68,7 +68,7 @@
 /* ABOUT US PAGE DESIGN HERE */
 .about-us{
     width: 100%;
-    min-height: 80;    
+    min-height: 90vh;    
     background-position: 80% 80%;
     /* display: flex; */
     flex-direction: column;
@@ -88,7 +88,7 @@
 
 .about-us section.section-info{
     width: 1500px;
-    height: 600px;
+    height: 650px;
     text-rendering: optimizeSpeed;
     background: rgba(255, 255, 255, .5);
     padding: 20px;
