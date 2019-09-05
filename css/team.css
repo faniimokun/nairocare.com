@@ -83,8 +83,9 @@ header nav {
 }
 .h1 {
   font-weight: bold;
+  font-size: 25px;
   color: #014127;
-  text-indent: 15px;
+  text-indent: 2rem;
   margin: 1rem 0px 0px 0px;
 }
 .trans{
@@ -112,7 +113,7 @@ body .front-end-cont {
   grid-template-columns: 20% 20% 20% 20%;
   grid-gap: 5%;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 25px 0 25px 30px;
   align-content: flex-start;
 }
@@ -148,6 +149,10 @@ body .front-end-cont {
   text-decoration: none;
   padding: 5px;
   border-radius: 5px;
+  transition: ease-in-out .3s;
+}
+.mre_details:hover{
+  background-color: #FFA401;
 }
 .discrip{
   padding: 5px;
@@ -303,6 +308,7 @@ footer{
     text-align: center;
     transition: 500ms ease-in-out all;
     margin: 0px;
+    z-index: 500;
   }
  #nav-items li{
    margin: auto;
@@ -347,5 +353,12 @@ i.fa-times{
     height: auto;
     margin-bottom: 10px;
     margin: 30px auto;
+  }
+  .h1{
+    text-indent: 0%;
+    text-align: center;
+  }
+  .yellow_hr{
+    text-align: center;
   }
 } 
