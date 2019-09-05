@@ -13,6 +13,10 @@
     src: url('../css/Geometria/Geometria-Light.ttf') format('truetype');
   
   } 
+  h2, h3{
+    color: #014127;
+    font-size: 25px;
+  }
   a{
       color: #fff;
       text-decoration: none;
@@ -64,7 +68,9 @@
     color: #FFA401;
   }
 /* ============== Add next Section styles here =================*/
-
+.center{
+    text-align: center;
+}
 /* ABOUT US PAGE DESIGN HERE */
 .about-us{
     width: 100%;
@@ -144,7 +150,7 @@
     color: #014127;
 }
 
-.stand-out h1.header-title{
+.header-title{
     display: block;
     margin-top: 30px;
     margin-bottom: 30px;
